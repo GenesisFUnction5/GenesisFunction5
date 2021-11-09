@@ -33,9 +33,17 @@ body {
     padding-top:35px; padding-left: 50px;
 }
 
+/* 로그인 박스 */
+
 .c3 {
-    padding-top: 35px; padding-right: 50px;
+    padding-top: 5px; 
+    /* padding-right: 50px; */
+    font-size: 10px;
+    line-height: 0.5;
+    overflow: visible;
 }
+
+
 
 .c2{
     padding-top: 35px;
@@ -102,6 +110,28 @@ a:active {
     text-align: center;
     color: white;
 }
+/* 로그인 박스  */
+
+.textBox2 {
+    border: none;
+    width:20% ; height: 10px;
+    background-color: transparent;
+    padding-bottom: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/* 
+#loginclose {
+    float: right;
+} */
+
+
+
 
 .textBox:focus {
     outline: none;
@@ -128,7 +158,7 @@ a:active {
 }
 
 #div3 {
-    height: 900px;
+    height: 200px;
     background-color: purple;
 }
 
@@ -144,4 +174,11 @@ a:active {
     border-top: 0.5px solid rgb(255,255,255,0.3);
     text-align: center;
     color: white; font-size: 12px;
+}
+
+
+/* 도일워크 */
+
+.login {
+    font-size: 10px;
 }
