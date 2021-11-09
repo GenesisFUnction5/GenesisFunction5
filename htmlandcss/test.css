@@ -33,10 +33,6 @@ body {
     padding-top:35px; padding-left: 50px;
 }
 
-#hamburger {
-    position: relative;
-}
-
 .c3 {
     padding-top: 35px; padding-right: 50px;
 }
@@ -124,22 +120,22 @@ a:active {
 
 #div1 {
     height: 800px;
-    background-color: yellow;
+    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
 }
 
 #div2 {
-    height: 900px;
-    background-color: green;
+    height: 800px;
+    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
 }
 
 #div3 {
-    height: 900px;
-    background-color: purple;
+    height: 800px;
+    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
 }
 
 #div4 {
-    height: 900px;
-    background-color: pink;
+    height: 800px;
+    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
 }
 
 #footer {
