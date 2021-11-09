@@ -33,9 +33,26 @@ body {
     padding-top:35px; padding-left: 50px;
 }
 
-.c3 {
-    padding-top: 35px; padding-right: 50px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/* 로그인 박스 */
+=======
+#hamburger {
+    position: relative;
 }
+>>>>>>> f7ad473e07ef4fe5e80e544098c0cadd486f21fb
+
+>>>>>>> e40b9ec7b9aef4450bd37382d2a986874bcba771
+.c3 {
+    padding-top: 5px; 
+    /* padding-right: 50px; */
+    font-size: 10px;
+    line-height: 0.5;
+    overflow: visible;
+}
+
+
 
 .c2{
     padding-top: 35px;
@@ -103,6 +120,28 @@ a:active {
     color: white;
     font-family: "PermanentMarker-Regular";
 }
+/* 로그인 박스  */
+
+.textBox2 {
+    border: none;
+    width:20% ; height: 10px;
+    background-color: transparent;
+    padding-bottom: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/* 
+#loginclose {
+    float: right;
+} */
+
+
+
 
 .textBox:focus {
     outline: none;
@@ -129,8 +168,13 @@ a:active {
 }
 
 #div3 {
+<<<<<<< HEAD
     height: 800px;
     background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
+=======
+    height: 200px;
+    background-color: purple;
+>>>>>>> e40b9ec7b9aef4450bd37382d2a986874bcba771
 }
 
 #div4 {
@@ -145,4 +189,11 @@ a:active {
     border-top: 0.5px solid rgb(255,255,255,0.3);
     text-align: center;
     color: white; font-size: 12px;
+}
+
+
+/* 도일워크 */
+
+.login {
+    font-size: 10px;
 }
