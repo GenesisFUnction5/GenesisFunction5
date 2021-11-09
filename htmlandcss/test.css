@@ -33,6 +33,10 @@ body {
     padding-top:35px; padding-left: 50px;
 }
 
+#hamburger {
+    position: relative;
+}
+
 .c3 {
     padding-top: 35px; padding-right: 50px;
 }
