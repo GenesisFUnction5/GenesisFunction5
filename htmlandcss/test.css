@@ -1,0 +1,147 @@
+@font-face {
+    src: url("./PermanentMarker-Regular.ttf") ;
+    font-family: "PermanentMarker-Regular";
+}
+
+body {
+    margin: 0%;
+    /* font-weight:  */
+    font-family: "PermanentMarker-Regular";
+}
+
+.yellow {
+    color: rgb(255, 245, 0);
+}
+
+.orange {
+    color: rgb(255,122,0);
+}
+
+#header {
+    height: 100px; 
+    width: 100%;
+    /* padding: 30px; */
+    /* background-attachment: fixed; */
+    border-bottom: 0.5px solid rgb(255,255,255,0.3);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: white; font-size: 20px;
+}
+
+.c1 {
+    padding-top:35px; padding-left: 50px;
+}
+
+.c3 {
+    padding-top: 35px; padding-right: 50px;
+}
+
+.c2{
+    padding-top: 35px;
+}
+
+ul{
+    margin-top: 130px; margin-left: 5%;
+    position: fixed;
+    /* float: left; */
+    list-style-type: none;
+    color: white;
+    line-height: 35px;
+}
+
+ul a {
+    text-decoration: none;
+    color: inherit;
+}
+/* a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue; 
+}*/
+
+#div {
+    height: 800px;
+    padding: 250px 28%;
+    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
+    color: white; font-size: 50px;
+}
+
+#div p {
+    padding: 0px; margin: 0px;
+}
+
+#div > .preOrder {
+    font-size: 2.8rem;
+    line-height: 80px;
+}
+
+.preOrder > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.textBox {
+    border: none;
+    width:60% ; height: 50px;
+    background-color: transparent;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.textBox:focus {
+    outline: none;
+}
+
+.close {
+    text-align: right;
+}
+
+.submit {
+    text-align: center;
+    font-size: 50px;
+    color: yellow;
+}
+
+#div1 {
+    height: 800px;
+    background-color: yellow;
+}
+
+#div2 {
+    height: 900px;
+    background-color: green;
+}
+
+#div3 {
+    height: 900px;
+    background-color: purple;
+}
+
+#div4 {
+    height: 900px;
+    background-color: pink;
+}
+
+#footer {
+    height: 70px; width: 50%;
+    padding-top: 20px;
+    position: fixed; bottom: 0; left: 25%;
+    border-top: 0.5px solid rgb(255,255,255,0.3);
+    text-align: center;
+    color: white; font-size: 12px;
+}
