@@ -33,7 +33,13 @@ body {
     padding-top:35px; padding-left: 50px;
 }
 
+<<<<<<< HEAD
 /* 로그인 박스 */
+=======
+#hamburger {
+    position: relative;
+}
+>>>>>>> f7ad473e07ef4fe5e80e544098c0cadd486f21fb
 
 .c3 {
     padding-top: 5px; 
@@ -106,9 +112,10 @@ a:active {
     width:60% ; height: 50px;
     background-color: transparent;
     padding-bottom: 5px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     color: white;
+    font-family: "PermanentMarker-Regular";
 }
 /* 로그인 박스  */
 
