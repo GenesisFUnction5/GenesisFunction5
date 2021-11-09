@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            src: url("./Coder\'s\ Crux.ttf") ;
+            font-family: "Coder's Crux";
+        }
+
+        body {
+            margin: 0%;
+            font-family: "Coder's Crux";
+            font-size: 28px;
+        }
+
+        #myPageBox {
+            width: 630px;
+            height: 510px;
+            background-color: rgb(255, 233, 213);
+            border: 4px solid rgb(24, 160, 241);
+        }
+
+        #myPageBox1 {
+            height: 25px;
+            padding: 0px 15px 0px 15px;
+            display: flex;
+            justify-content: space-between;
+            background-color: grey;
+            color: white;
+        }
+
+        #myPageBox1 div {
+            padding: 5px;
+        }
+
+        #myPageBox1 .userName{
+            background-color: black;
+            padding-left: 28px; padding-right: 28px;
+        }
+
+        #myPageBox2 {
+            height: 25px;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.5px solid grey;
+            background-color: white;
+            color: black;
+        }
+
+        #myPageBox2 div {
+            padding: 5px;
+        }
+
+        #myPageBox3 {
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .aboutMe {
+            height: 200px; width: 300px;
+            background-color: white;
+            border: 1.5px solid black;
+        }
+
+        .aboutTP{
+            margin-bottom: 15px;
+            padding: 7px 0 7px 15px;
+            border-bottom: 2.7px solid black;
+        }
+
+        .about p {
+            border-top: 1px solid black; border-bottom: 1px solid black;
+            margin: 3px 0;
+            padding: 3px 0px 2px 15px;
+            overflow: hidden;
+        }
+
+        p > img {
+            /* height: 100%;
+            object-fit: cover; */
+            background-size: cover;
+    background-repeat: no-repeat;
+        }
+
+        .myImageOut {
+            width: 150px; height: 130px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .myImageOut .myImageIn {
+            width: 144px; height: 124px;
+            border: 2px solid black;
+            margin: 1px;
+        }
+
+        #myPageBox4 {
+            height: 203px;
+            padding: 2px;
+            background-color: white; border: 1.2px solid black;
+        }
+        
+        #myPageBox4InBox {
+            height: 202px; width: 622px;
+            border: 1px;
+            box-shadow: 2px 2px 0px 0px;
+        }
+
+        .aboutMeContentT {
+            height: 25px;
+            padding-top: 10px; padding-bottom: 1px;
+            border: 1px solid black;
+            /* display: flex;
+            justify-content: space-between; */
+            text-align: center;
+        }
+
+        .aboutMeContent {
+            padding: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <section id="myPageBox">
+        <div id="myPageBox1">
+            <div>menu</div><div class="userName">"Steve Jobs"</div><div><input type="button"></div>
+        </div>
+        <div id="myPageBox2">
+            <div>#id:</div><div>.class=(ceo);</div><div>signal low --</div>
+        </div>
+        <div id="myPageBox3">
+            <div class="aboutMe">
+                <div class="aboutTP">about this person;</div>
+                <div class="about">
+                    <div class="test" style="display: flex;">
+                        <img src="./myPAGE/icons/alarm-clock.svg" width="8%" height="8%">
+                        <p>nextAirDrop();</p>
+                    </div>
+                    <p>nextAirDrop();</p>
+                    <p>myAsset();</p>
+                    <p>myQ&A();</p>
+                    <p>staking</p>
+                    <p>#walletAdress</p>
+                </div>
+            </div>
+            <div class="myImageOut">
+                <div class="myImageIn">123</div>
+            </div>
+        </div>
+        <div id="myPageBox4">
+            <div id="myPageBox4InBox">
+                <div class="aboutMeContentT">"#walletAdress".app (Active)</div>
+                <div class="aboutMeContent">2021.11.</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
