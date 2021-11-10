@@ -1,0 +1,269 @@
+@font-face {
+    src: url("./PermanentMarker-Regular.ttf") ;
+    font-family: "PermanentMarker-Regular";
+}
+
+@font-face {
+    src: url("./Coder\'s\ Crux.ttf") ;
+    font-family: "Coder's Crux";
+}
+
+body {
+    margin: 0%;
+    font-family: "PermanentMarker-Regular";
+}
+
+.yellow {
+    color: rgb(255, 245, 0);
+}
+
+.orange {
+    color: rgb(255,122,0);
+}
+
+#header {
+    height: 100px; 
+    width: 100%;
+    /* padding: 30px; */
+    /* background-attachment: fixed; */
+    border-bottom: 0.5px solid rgb(255,255,255,0.3);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: white; font-size: 30px;
+}
+
+#headerL {
+    padding-top:35px; padding-left: 50px;
+}
+
+
+/* 마이페이지 팝업 */
+
+input#hamburger:checked + section#myPageBox {
+    display: block;
+}
+
+
+
+input#hamburger {
+    display: none;
+}
+
+section#myPageBox {
+    z-index: 3;
+    position: absolute;
+    display: none;
+    margin: 0%;
+    font-family: "Coder's Crux";
+    font-size: 28px;
+    width: 630px;
+    height: 510px;
+    background-color: rgb(255, 233, 213);
+    border: 4px solid rgb(24, 160, 241);
+}
+
+#myPageBox1 {
+    height: 25px;
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    color: white;
+}
+
+#myPageBox1 div {
+    padding: 5px;
+}
+
+#myPageBox1 .userName{
+    background-color: black;
+    padding-left: 28px; padding-right: 28px;
+}
+
+#myPageBox2 {
+    height: 25px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid grey;
+    background-color: white;
+    color: black;
+}
+
+#myPageBox2 div {
+    padding: 5px;
+}
+
+#myPageBox3 {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: black ;
+}
+
+.aboutMe {
+    height: 200px; width: 300px;
+    background-color: white;
+    border: 1.5px solid black;
+}
+
+.aboutTP{
+    margin-bottom: 15px;
+    padding: 7px 0 7px 15px;
+    border-bottom: 2.7px solid black;
+}
+
+div.about p {
+    border-top: 1px solid black; border-bottom: 1px solid black;
+    margin: 3px 0;
+    padding: 3px 0px 2px 15px;
+    /* overflow: hidden; 아이콘이 안보여서 test로 넣음*/
+}
+
+.myImageOut {
+    width: 150px; height: 130px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.myImageOut .myImageIn {
+    width: 144px; height: 124px;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+#myPageBox4 {
+    height: 203px;
+    padding: 2px;
+    background-color: white; border: 1.2px solid black;
+    color: black;
+}
+
+#myPageBox4InBox {
+    height: 202px; width: 622px;
+    border: 1px;
+    box-shadow: 2px 2px 0px 0px;
+}
+
+.aboutMeContentT {
+    height: 25px;
+    padding-top: 10px; padding-bottom: 1px;
+    border: 1px solid black;
+    /* display: flex;
+    justify-content: space-between; */
+    text-align: center;
+}
+
+.aboutMeContent {
+    height: 148px;
+    padding: 8px;
+    /* background-color: cornflowerblue; */
+    background-image: url(./myPAGE/battery.svg);
+    border-left: 2px solid black;
+}
+/* 마이페이지 팝업 끝 */
+
+
+#headerMid{
+    padding-top: 29px;
+}
+
+#headerR {
+    padding-top:35px; padding-right: 50px;
+    overflow: visible;
+}
+
+#headerR img {
+    width: 30px; height: 35px;
+}
+
+ul{
+    margin-top: 130px; margin-left: 5%;
+    position: fixed;
+    z-index: 0;
+    list-style-type: none;
+    color: white;
+    line-height: 35px;
+}
+
+ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* #mainall {
+    height: 800px;
+    padding: 170px;
+    background-color: rgb(55, 147, 255);
+    text-align: center;
+    color: white;
+} */
+#landing {
+    height: 800px;
+    padding: 170px;
+    background-color: rgb(55, 147, 255);
+    text-align: center;
+    color: white;
+}
+
+#dDayTimer {
+    font-size: 50px;
+}
+
+.landingUndTimTT{
+    font-size: 30px;
+    line-height: 90px;
+}
+
+#landImg {
+    padding: 85px;
+}
+
+#landSign a {
+    font-size: 60px;
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: inherit; /* 링크의 색상 제거 */
+}
+
+#pre {
+    height: 800px;
+    padding: 170px;
+    background-color: rgb(55, 147, 255);
+    text-align: center;
+    color: white;
+}
+
+#aboutUs {
+    height: 800px;
+    padding: 170px;
+    background-color: rgb(55, 147, 255);
+    text-align: center;
+    color: white;
+}
+
+#roadMap{
+    height: 800px;
+    padding: 170px;
+    background-color: rgb(55, 147, 255);
+    text-align: center;
+    color: white;
+}
+
+#whitePaper {
+    height: 800px;
+    padding: 170px;
+    background-color: rgb(55, 147, 255);
+    text-align: center;
+    color: white;
+}
+
+#footer {
+    height: 70px; width: 50%;
+    padding-top: 20px;
+    position: fixed; bottom: 0; left: 25%;
+    border-top: 0.5px solid rgb(255,255,255,0.3);
+    text-align: center;
+    color: white; font-size: 12px;
+}
+
