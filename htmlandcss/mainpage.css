@@ -10,8 +10,8 @@
 
 body {
     margin: 0%;
-    /* font-weight:  */
     font-family: "PermanentMarker-Regular";
+    background-color: rgb(55, 147, 255);
 }
 
 .yellow {
@@ -31,21 +31,21 @@ body {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    color: white; font-size: 20px;
+    color: white; font-size: 30px;
 }
 
-.headerL {
+#headerL {
     padding-top:35px; padding-left: 50px;
 }
 
 
-/* 마이페이지 박스 */
+/* 마이페이지 팝업 */
 
-input#hamburger:checked + nav#myPageBox {
+input#hamburger:checked + section#myPageBox {
     display: block;
 }
 
-input#myPageClsBtn:checked + nav#myPageBox {
+input#myPageClsBtn:checked + section#myPageBox {
     display: none;
 }
 
@@ -53,9 +53,9 @@ input#hamburger , input#myPageClsBtn {
     display: none;
 }
 
-nav#myPageBox {
-    z-index: 1;
-    position: fixed;
+section#myPageBox {
+    z-index: 3;
+    position: absolute;
     display: none;
     margin: 0%;
     font-family: "Coder's Crux";
@@ -116,20 +116,12 @@ nav#myPageBox {
     border-bottom: 2.7px solid black;
 }
 
-.about p {
+div.about p {
     border-top: 1px solid black; border-bottom: 1px solid black;
     margin: 3px 0;
     padding: 3px 0px 2px 15px;
-    overflow: hidden;
+    /* overflow: hidden; 아이콘이 안보여서 test로 넣음*/
 }
-
-/*
-p > img {
-    height: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
 .myImageOut {
     width: 150px; height: 130px;
@@ -171,23 +163,26 @@ p > img {
     background-image: url(./myPAGE/pattern3.svg);
     border-left: 2px solid black;
 }
+/* 마이페이지 팝업 끝 */
 
-.headerMid{
-    padding-top: 35px;
+
+#headerMid{
+    padding-top: 29px;
 }
 
-.headerR {
-    padding-top: 5px; 
-    /* padding-right: 50px; */
-    font-size: 10px;
-    line-height: 0.5;
+#headerR {
+    padding-top:35px; padding-right: 50px;
     overflow: visible;
+}
+
+#headerR img {
+    width: 30px; height: 35px;
 }
 
 ul{
     margin-top: 130px; margin-left: 5%;
     position: fixed;
-    /* float: left; */
+    z-index: 0;
     list-style-type: none;
     color: white;
     line-height: 35px;
@@ -197,115 +192,40 @@ ul a {
     text-decoration: none;
     color: inherit;
 }
-/* a:link {
-    color: red;
+
+#mainall {
+    display: flex;
+    flex-direction: column;
+    height: 4000px;
+    margin: 0;
+    padding: 0;
 }
 
-a:visited {
-    color: green;
-}
-
-a:hover {
-    color: hotpink;
-}
-
-a:active {
-    color: blue; 
-}*/
-
-#div {
-    height: 800px;
-    padding: 250px 28%;
-    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
+#landing {
+    height: 20%;
+    padding: 170px;    
     color: white; font-size: 50px;
 }
 
-#div p {
-    padding: 0px; margin: 0px;
+
+#pre {
+    height: 20%;
+    padding: 170px;
 }
 
-#div > .preOrder {
-    font-size: 2.8rem;
-    line-height: 80px;
+#aboutUs {
+    height: 20%;
+    padding: 170px;
 }
 
-.preOrder > div{
-    display: flex;
-    justify-content: space-between;
+#roadMap {
+    height: 20%;
+    padding: 170px;
 }
 
-
-
-.textBox {
-    border: none;
-    width:60% ; height: 50px;
-    background-color: transparent;
-    padding-bottom: 5px;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    font-family: "PermanentMarker-Regular";
-}
-/* 로그인 박스  */
-
-.textBox2 {
-    border: none;
-    width:20% ; height: 10px;
-    background-color: transparent;
-    padding-bottom: 5px;
-    font-size: 10px;
-    text-align: center;
-    color: white;
-}
-
-
-
-
-/* 
-#loginclose {
-    float: right;
-} */
-
-
-
-
-.textBox:focus {
-    outline: none;
-}
-
-.close {
-    text-align: right;
-}
-
-.submit {
-    text-align: center;
-    font-size: 50px;
-    color: yellow;
-}
-
-#div1 {
-    height: 800px;
-    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
-}
-
-#div2 {
-    height: 800px;
-    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
-}
-
-#div3 {
-<<<<<<< HEAD
-    height: 800px;
-    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
-=======
-    height: 200px;
-    background-color: purple;
->>>>>>> e40b9ec7b9aef4450bd37382d2a986874bcba771
-}
-
-#div4 {
-    height: 800px;
-    background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
+#whitePaper {
+    height: 20%;
+    padding: 170px;
 }
 
 #footer {
@@ -317,9 +237,3 @@ a:active {
     color: white; font-size: 12px;
 }
 
-
-/* 도일워크 */
-
-.login {
-    font-size: 10px;
-}
