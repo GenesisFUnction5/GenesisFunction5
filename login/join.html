@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            src: url("../htmlandcss/PermanentMarker-Regular.ttf") ;
+            font-family: "PermanentMarker-Regular";
+        }
+
+        body {
+            margin: 0%;
+            font-family: "PermanentMarker-Regular";
+        }
+
+        .yellow {
+            color: rgb(255, 245, 0);
+        }
+
+        .orange {
+            color: rgb(255,122,0);
+        }
+
+        #div p {
+            padding: 0px; margin: 0px;
+        }
+
+        #div > .preOrder {
+            font-size: 2.8rem;
+            line-height: 80px;
+        }
+
+        .preOrder > div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        .textBox {
+            border: none;
+            width:60% ; height: 50px;
+            background-color: transparent;
+            padding-bottom: 5px;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            font-family: "PermanentMarker-Regular";
+        }
+        /* 로그인 박스  */
+
+        .textBox2 {
+            border: none;
+            width:20% ; height: 10px;
+            background-color: transparent;
+            padding-bottom: 5px;
+            font-size: 10px;
+            text-align: center;
+            color: white;
+        }
+
+
+
+
+        /* 
+        #loginclose {
+            float: right;
+        } */
+
+
+
+
+        .textBox:focus {
+            outline: none;
+        }
+
+        .close {
+            text-align: right;
+        }
+
+        .submit {
+            text-align: center;
+            font-size: 50px;
+            color: yellow;
+        }
+
+        #div {
+            height: 800px;
+            padding: 250px 28%;
+            background: linear-gradient(-90deg, rgb(45, 134, 220), rgb(30, 197, 206));
+            color: white; font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div">
+        <p>< > </p>
+        <div class="preOrder">
+            <div><div class="orange">&nbsp;&nbsp;&nbsp;#NAME: </div><div><span class="yellow"> (</span>"<input type="text" class="textBox">"<span class="yellow">)&nbsp;&nbsp;</span></div></div>
+            <div><div class="orange">&nbsp;&nbsp;&nbsp;#ID: </div><div><span class="yellow"> (</span>"<input type="text" class="textBox">"<span class="yellow">)&nbsp;&nbsp;</span></div></div>
+            <div><div class="orange">&nbsp;&nbsp;&nbsp;PASSWORD: </div><div><span class="yellow"> (</span>"<input type="password" class="textBox">"<span class="yellow">)&nbsp;&nbsp;</span></div></div>
+            <div><div class="orange">&nbsp;&nbsp;&nbsp;CHCKPASS: </div><div><span class="yellow"> (</span>"<input type="password" class="textBox">"<span class="yellow">)&nbsp;&nbsp;</span></div></div>
+        <p class="close"> < / ></p>
+        </div>
+        <p></p>
+        <p class="submit"><strong>SUBMIT </strong><span class="orange">{<input type="image" src="../genesisFunction/images/landing/surprise.svg" id="submitBtn">}</span><span style="color: white;">;</span></p>
+    </div>
+</body>
+</html>
