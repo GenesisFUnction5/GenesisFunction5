@@ -3,6 +3,11 @@
     font-family: "PermanentMarker-Regular";
 }
 
+@font-face {
+    src: url("./Coder\'s\ Crux.ttf") ;
+    font-family: "Coder's Crux";
+}
+
 body {
     margin: 0%;
     /* font-weight:  */
@@ -29,33 +34,154 @@ body {
     color: white; font-size: 20px;
 }
 
-.c1 {
+.headerL {
     padding-top:35px; padding-left: 50px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-/* 로그인 박스 */
-=======
-#hamburger {
-    position: relative;
-}
->>>>>>> f7ad473e07ef4fe5e80e544098c0cadd486f21fb
 
->>>>>>> e40b9ec7b9aef4450bd37382d2a986874bcba771
-.c3 {
+/* 마이페이지 박스 */
+
+input#hamburger:checked + nav#myPageBox {
+    display: block;
+}
+
+input#myPageClsBtn:checked + nav#myPageBox {
+    display: none;
+}
+
+input#hamburger , input#myPageClsBtn {
+    display: none;
+}
+
+nav#myPageBox {
+    z-index: 1;
+    position: fixed;
+    display: none;
+    margin: 0%;
+    font-family: "Coder's Crux";
+    font-size: 28px;
+    width: 630px;
+    height: 510px;
+    background-color: rgb(255, 233, 213);
+    border: 4px solid rgb(24, 160, 241);
+}
+
+#myPageBox1 {
+    height: 25px;
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    color: white;
+}
+
+#myPageBox1 div {
+    padding: 5px;
+}
+
+#myPageBox1 .userName{
+    background-color: black;
+    padding-left: 28px; padding-right: 28px;
+}
+
+#myPageBox2 {
+    height: 25px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid grey;
+    background-color: white;
+    color: black;
+}
+
+#myPageBox2 div {
+    padding: 5px;
+}
+
+#myPageBox3 {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe {
+    height: 200px; width: 300px;
+    background-color: white;
+    border: 1.5px solid black;
+}
+
+.aboutTP{
+    margin-bottom: 15px;
+    padding: 7px 0 7px 15px;
+    border-bottom: 2.7px solid black;
+}
+
+.about p {
+    border-top: 1px solid black; border-bottom: 1px solid black;
+    margin: 3px 0;
+    padding: 3px 0px 2px 15px;
+    overflow: hidden;
+}
+
+/*
+p > img {
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.myImageOut {
+    width: 150px; height: 130px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.myImageOut .myImageIn {
+    width: 144px; height: 124px;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+#myPageBox4 {
+    height: 203px;
+    padding: 2px;
+    background-color: white; border: 1.2px solid black;
+}
+
+#myPageBox4InBox {
+    height: 202px; width: 622px;
+    border: 1px;
+    box-shadow: 2px 2px 0px 0px;
+}
+
+.aboutMeContentT {
+    height: 25px;
+    padding-top: 10px; padding-bottom: 1px;
+    border: 1px solid black;
+    /* display: flex;
+    justify-content: space-between; */
+    text-align: center;
+}
+
+.aboutMeContent {
+    height: 148px;
+    padding: 8px;
+    /* background-color: cornflowerblue; */
+    background-image: url(./myPAGE/pattern3.svg);
+    border-left: 2px solid black;
+}
+
+.headerMid{
+    padding-top: 35px;
+}
+
+.headerR {
     padding-top: 5px; 
     /* padding-right: 50px; */
     font-size: 10px;
     line-height: 0.5;
     overflow: visible;
-}
-
-
-
-.c2{
-    padding-top: 35px;
 }
 
 ul{
