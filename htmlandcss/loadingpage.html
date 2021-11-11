@@ -30,11 +30,27 @@
         loading...
     </div>
     <div>
-        <img src="../genesisFunction/images/Loading/loadingbar.svg" alt="">
+        <!-- <img src="../genesisFunction/images/Loading/loadingbar.svg" alt=""> -->
+        <div class="progressbar"><div class="progress"></div></div>
+        
     </div>
-    <div class="loadingbar">
-        28% loaded....
+    <div class="loadingbar">100%       
     </div>
+    <script>
+            
+        const loadingbar = document.querySelector(".loadingbar");
+        let counter = 0;
+        setInterval(()=>{
+            if(counter == 100) {
+                clearInterval();
+                location.href = "mainpage.html";
+
+            } else {
+                counter += 1;
+                loadingbar.textContent = counter + "% loaded...";
+            }
+        }, 45);
+    </script>
     </div>
 
     <div class="exit">
@@ -53,4 +69,5 @@ Copyright (C) genesYs function All rights reserved.
 </footer>
 </div>
 </body>
+
 </html>

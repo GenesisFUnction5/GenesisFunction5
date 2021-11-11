@@ -88,12 +88,44 @@
 }
 /* 도일 loadingpage 끝 */
 
+/* 로딩바 애니메이션 */
+
+.progressbar {
+
+    height: 7px;
+    width: 430px;
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+
+}
+
+.progressbar .progress {
+
+    height: 7px;
+    width: 430px;
+    background-color: rgb(255,122,0);
+    border-radius: 25px;
+    position: absolute;
+    animation: progress-animation 5s 1;
+
+}
+
+@keyframes progress-animation {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+/* 수정 */
+
 body {
     margin: 0%;
     font-family: "PermanentMarker-Regular";
     background-color: rgb(55, 147, 255);
     color: white; 
 }
+
+
 
 .yellow {
     color: rgb(255, 245, 0);
