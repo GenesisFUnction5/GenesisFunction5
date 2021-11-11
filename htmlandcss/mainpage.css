@@ -316,44 +316,68 @@ ul a {
     width: 1000px; height: 500px;
     margin: 40px;
     background-color: white;
-    position: relative;
-}
-
-.whiteBoxNum {
-    width: 7px;
-    flex-direction: column;
-    position: absolute; top: 15px; left: 15px;
-    color: rgb(255,122,0);
-}
-
-.whiteBoxCont {
-    position: absolute; top: 15px; left: 100px;
-    color: rgb(255,122,0);
     text-align: left;
 }
 
-.wBC1 {
-    width: 700px;
-    position: absolute; left: 10px;
+.whitePBoxNum {
+    width: 14px; height: 500px;
+    margin: 16px 15px; padding: 0px;
+    display: inline-block;
+    color: rgb(255,122,0);
+}
+
+.whitePBoxCont {
+    width: 730px;
+    vertical-align: top;
+    margin: 16px 35px; padding: 0px;
+    display: inline-block;
+    color: rgb(255,122,0);
+}
+
+.wPBC {
+    font-weight: bolder;
+}
+
+.wPBC1 {
+    padding-left: 10px;
     color: rgb(55, 147, 255);
 }
 
-.wBC2 {
-    width: 700px;
-    position: absolute; top: 136px; left: 50px;
+.wPBC2 {
+    padding: 50px 0 0 50px;
 }
 
-.wBC3 {
-    width: 700px;
-    position: absolute; top: 342px; left: 95px;
+.wPBC3 {
+    padding: 40px 0 0 100px;
     color: rgb(55, 147, 255);
 }
 
-.wBC4 {
-    width: 600px;
-    position: absolute; top: 410px; left: 110px;
+.wPBC4 {
+    font-weight: bolder;
+    padding-right: 10px;
     text-align: right;
+    color: rgb(255,122,0);
 }
+
+.whiteBox2 {
+    width: 1000px; height: 500px;
+    margin: 40px;
+    background-color: white;
+    /* text-align: center; */
+    color: black;
+    font-family: "Coder's Crux";
+}
+
+.qWBHead {
+    width: 980px;
+    margin: 5px 10px;
+    border: 1px solid black;
+    border-style: dashed solid none dashed solid none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
 
 #footer {
     height: 70px; width: 50%;
