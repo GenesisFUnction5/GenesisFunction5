@@ -18,7 +18,8 @@
                     <div>menu</div>
                     <div class="userName">"Steve Jobs"</div>
                     <div>
-                        <img src="./myPAGE/Windows.svg">                        
+                        <img src="./myPAGE/Windows.svg" onclick="closeBtn();">
+
                     </div>
                 </div>
                 <div id="myPageBox2">
@@ -60,7 +61,7 @@
             </div>        
         </div>
     </header>
-    <ul>
+    <ul id=quickMenu>
         <li><a href="#landing">LANDINN();</a></li>
         <li><a href="#aboutUs">ABOUT_US</a></li>
         <li><a href="#roadMap">ROAD_MAP</a></li>
@@ -115,5 +116,29 @@
     </nav>
     
     <footer id="footer">WHINDOWS POWERSHELL<br>COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED</footer>
+    <script>
+        // document.body.onload = myPageOnOff;
+        let myPageOnOff;
+
+        myPageOnOff = function() {
+            myPageChBox = document.getElementById("hamburger").checked;
+            if (myPageChBox==false){
+                document.getElementById("myPageBox").style.display = "none";
+                document.getElementById("quickMenu").style.display = "block";
+            }
+            else {
+                document.getElementById("myPageBox").style.display = "block";
+                document.getElementById("quickMenu").style.display = "none";
+            }
+        }
+
+        function closeBtn() {
+            document.getElementById("myPageBox").style.display = "none";
+            document.getElementById("quickMenu").style.display = "block";
+        }
+
+        document.getElementById("hamburger").addEventListener("click", myPageOnOff);
+        
+    </script>
 </body>
 </html>
