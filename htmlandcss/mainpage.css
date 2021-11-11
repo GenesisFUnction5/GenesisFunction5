@@ -8,32 +8,6 @@
     font-family: "Coder's Crux";
 }
 
-body {
-    margin: 0%;
-    font-family: "PermanentMarker-Regular";
-    background-color: rgb(55, 147, 255);
-}
-
-.yellow {
-    color: rgb(255, 245, 0);
-}
-
-.orange {
-    color: rgb(255,122,0);
-}
-
-#header {
-    height: 100px; 
-    width: 100%;
-    /* padding: 30px; */
-    /* background-attachment: fixed; */
-    border-bottom: 0.5px solid rgb(255,255,255,0.3);
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    color: white; font-size: 30px;
-}
-
 /* 도일 바디&헤더 */
 
 #doilbody {
@@ -103,7 +77,6 @@ body {
     font-family: "Coder's Crux";
 }
 
-
 .smiley {
     padding: 100px 0 0 0;
 }
@@ -113,6 +86,7 @@ body {
     font-size: 12px;
     padding: 20px 0 20px 0;
 }
+/* 도일 loadingpage 끝 */
 
 /* 로딩바 애니메이션 */
 
@@ -142,23 +116,45 @@ body {
     100% {width: 100%;}
 }
 
+/* 수정 */
+
+body {
+    margin: 0%;
+    font-family: "PermanentMarker-Regular";
+    background-color: rgb(55, 147, 255);
+    color: white; 
+}
 
 
 
+.yellow {
+    color: rgb(255, 245, 0);
+}
+
+.orange {
+    color: rgb(255,122,0);
+}
 
 
-
+#header {
+    height: 92px; 
+    width: 100%;
+    /* padding: 30px; */
+    /* background-attachment: fixed; */
+    border-bottom: 0.5px solid rgb(255,255,255,0.3);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
 
 #headerL {
-    padding-top:35px; padding-left: 50px;
+    padding-top:27px; padding-left: 50px;
 }
 
 
 /* 마이페이지 팝업 */
 
-input#hamburger:checked + section#myPageBox {
-    display: block;
-}
 
 
 
@@ -181,7 +177,7 @@ section#myPageBox {
 
 #myPageBox1 {
     height: 25px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 0px 0px 15px;
     display: flex;
     justify-content: space-between;
     background-color: grey;
@@ -282,11 +278,11 @@ div.about p {
 
 
 #headerMid{
-    padding-top: 29px;
+    padding-top: 22px;
 }
 
 #headerR {
-    padding-top:35px; padding-right: 50px;
+    padding-top:25px; padding-right: 50px;
     overflow: visible;
 }
 
@@ -308,28 +304,26 @@ ul a {
     color: inherit;
 }
 
-/* #mainall {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
+#landing, #aboutUs, #roadMap, #whitePaper, #qna {
+    height: 707px;
+    padding: 130px 400px;
     color: white;
-} */
-#landing {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
     text-align: center;
-    color: white;
 }
 
+
 #dDayTimer {
+    padding-top: 70px;
     font-size: 50px;
 }
 
 .landingUndTimTT{
     font-size: 30px;
     line-height: 90px;
+}
+
+.p1 {
+    padding: 10px;
 }
 
 #landImg {
@@ -342,36 +336,55 @@ ul a {
     color: inherit; /* 링크의 색상 제거 */
 }
 
-#pre {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.aboutUsPageHead, .future, .whitePaperHead, .qnaHead {
+    font-size: 70px;
 }
 
-#aboutUs {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.p2 {
+    padding: 10px;
 }
 
-#roadMap{
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.whiteBox {
+    width: 1000px; height: 500px;
+    margin: 40px;
+    background-color: white;
+    position: relative;
 }
 
-#whitePaper {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.whiteBoxNum {
+    width: 7px;
+    flex-direction: column;
+    position: absolute; top: 15px; left: 15px;
+    color: rgb(255,122,0);
+}
+
+.whiteBoxCont {
+    position: absolute; top: 15px; left: 100px;
+    color: rgb(255,122,0);
+    text-align: left;
+}
+
+.wBC1 {
+    width: 700px;
+    position: absolute; left: 10px;
+    color: rgb(55, 147, 255);
+}
+
+.wBC2 {
+    width: 700px;
+    position: absolute; top: 136px; left: 50px;
+}
+
+.wBC3 {
+    width: 700px;
+    position: absolute; top: 342px; left: 95px;
+    color: rgb(55, 147, 255);
+}
+
+.wBC4 {
+    width: 600px;
+    position: absolute; top: 410px; left: 110px;
+    text-align: right;
 }
 
 #footer {
