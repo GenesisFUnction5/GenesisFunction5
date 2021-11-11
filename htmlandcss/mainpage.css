@@ -40,9 +40,6 @@ body {
 
 /* 마이페이지 팝업 */
 
-input#hamburger:checked + section#myPageBox {
-    display: block;
-}
 
 
 
@@ -65,7 +62,7 @@ section#myPageBox {
 
 #myPageBox1 {
     height: 25px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 0px 0px 15px;
     display: flex;
     justify-content: space-between;
     background-color: grey;
