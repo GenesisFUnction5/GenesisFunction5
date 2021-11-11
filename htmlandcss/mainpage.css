@@ -1,3 +1,15 @@
+/* 단축키
+
+Ctrl + k + 0 : 전체 영역 닫기
+Ctrl + k + j : 전체 영역 열기
+
+Ctrl + Shift + [ : 현재 영역 닫기
+Ctrl + Shift + ] : 현재 영역 열기
+
+Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
+   
+*/
+
 @font-face {
     src: url("./PermanentMarker-Regular.ttf") ;
     font-family: "PermanentMarker-Regular";
@@ -13,7 +25,9 @@
     src: url("../genesisFunction/images/font/DungGeunMo.ttf");
 }
 
+
 /* 도일 바디&헤더 */
+
 
 #doilbody {
     height: 100px; 
@@ -91,9 +105,13 @@
     font-size: 12px;
     padding: 20px 0 20px 0;
 }
+
+
 /* 도일 loadingpage 끝 */
 
+
 /* 로딩바 애니메이션 */
+
 
 .progressbar {
 
@@ -121,7 +139,9 @@
     100% {width: 100%;}
 }
 
+
 /* 수정 */
+
 
 body {
     margin: 0%;
@@ -130,8 +150,6 @@ body {
     color: white; 
 }
 
-
-
 .yellow {
     color: rgb(255, 245, 0);
 }
@@ -139,7 +157,6 @@ body {
 .orange {
     color: rgb(255,122,0);
 }
-
 
 #header {
     height: 92px; 
@@ -159,8 +176,6 @@ body {
 
 
 /* 마이페이지 팝업 */
-
-
 
 
 input#hamburger {
@@ -279,6 +294,8 @@ div.about p {
     background-image: url(./myPAGE/battery.svg);
     border-left: 2px solid black;
 }
+
+
 /* 마이페이지 팝업 끝 */
 
 
