@@ -11,6 +11,8 @@
 body {
     margin: 0%;
     font-family: "PermanentMarker-Regular";
+    background-color: rgb(55, 147, 255);
+    color: white; 
 }
 
 .yellow {
@@ -21,8 +23,9 @@ body {
     color: rgb(255,122,0);
 }
 
+
 #header {
-    height: 100px; 
+    height: 92px; 
     width: 100%;
     /* padding: 30px; */
     /* background-attachment: fixed; */
@@ -30,11 +33,11 @@ body {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    color: white; font-size: 30px;
+    font-size: 30px;
 }
 
 #headerL {
-    padding-top:35px; padding-left: 50px;
+    padding-top:27px; padding-left: 50px;
 }
 
 
@@ -166,11 +169,11 @@ div.about p {
 
 
 #headerMid{
-    padding-top: 29px;
+    padding-top: 22px;
 }
 
 #headerR {
-    padding-top:35px; padding-right: 50px;
+    padding-top:25px; padding-right: 50px;
     overflow: visible;
 }
 
@@ -192,28 +195,26 @@ ul a {
     color: inherit;
 }
 
-/* #mainall {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
+#landing, #aboutUs, #roadMap, #whitePaper, #qna {
+    height: 707px;
+    padding: 130px 400px;
     color: white;
-} */
-#landing {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
     text-align: center;
-    color: white;
 }
 
+
 #dDayTimer {
+    padding-top: 70px;
     font-size: 50px;
 }
 
 .landingUndTimTT{
     font-size: 30px;
     line-height: 90px;
+}
+
+.p1 {
+    padding: 10px;
 }
 
 #landImg {
@@ -226,36 +227,55 @@ ul a {
     color: inherit; /* 링크의 색상 제거 */
 }
 
-#pre {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.aboutUsPageHead, .future, .whitePaperHead, .qnaHead {
+    font-size: 70px;
 }
 
-#aboutUs {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.p2 {
+    padding: 10px;
 }
 
-#roadMap{
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.whiteBox {
+    width: 1000px; height: 500px;
+    margin: 40px;
+    background-color: white;
+    position: relative;
 }
 
-#whitePaper {
-    height: 800px;
-    padding: 170px;
-    background-color: rgb(55, 147, 255);
-    text-align: center;
-    color: white;
+.whiteBoxNum {
+    width: 7px;
+    flex-direction: column;
+    position: absolute; top: 15px; left: 15px;
+    color: rgb(255,122,0);
+}
+
+.whiteBoxCont {
+    position: absolute; top: 15px; left: 100px;
+    color: rgb(255,122,0);
+    text-align: left;
+}
+
+.wBC1 {
+    width: 700px;
+    position: absolute; left: 10px;
+    color: rgb(55, 147, 255);
+}
+
+.wBC2 {
+    width: 700px;
+    position: absolute; top: 136px; left: 50px;
+}
+
+.wBC3 {
+    width: 700px;
+    position: absolute; top: 342px; left: 95px;
+    color: rgb(55, 147, 255);
+}
+
+.wBC4 {
+    width: 600px;
+    position: absolute; top: 410px; left: 110px;
+    text-align: right;
 }
 
 #footer {
