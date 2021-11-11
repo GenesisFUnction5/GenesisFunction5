@@ -178,7 +178,7 @@ body {
 /* 마이페이지 팝업 */
 
 
-input#hamburger {
+input#myPageBtn {
     display: none;
 }
 

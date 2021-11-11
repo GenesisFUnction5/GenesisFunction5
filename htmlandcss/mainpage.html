@@ -11,8 +11,9 @@
     <!--<div>미리 보기에 나올 장면</div>-->
     <header id="header">
         <div id="headerL">
-            <label class ="hamburger" for="hamburger"><img src="./icons8-메뉴-30.png"></label>
-            <input id="hamburger" type="checkbox">
+            <label for="myPageBtn"><img src="./icons8-메뉴-30.png"></label>
+            <!-- ./icons8-메뉴-30.png : 햄버거 메뉴 모양 소스-->
+            <input id="myPageBtn" type="checkbox">
             <section id="myPageBox">
                 <div id="myPageBox1">
                     <div>menu</div>
@@ -126,7 +127,7 @@
         let myPageOnOff;
 
         myPageOnOff = function() {
-            myPageChBox = document.getElementById("hamburger").checked;
+            myPageChBox = document.getElementById("myPageBtn").checked;
             if (myPageChBox==false){
                 document.getElementById("myPageBox").style.display = "none";
                 document.getElementById("quickMenu").style.display = "block";
@@ -142,7 +143,7 @@
             document.getElementById("quickMenu").style.display = "block";
         }
 
-        document.getElementById("hamburger").addEventListener("click", myPageOnOff);
+        document.getElementById("myPageBtn").addEventListener("click", myPageOnOff);
         
     </script>
 </body>
