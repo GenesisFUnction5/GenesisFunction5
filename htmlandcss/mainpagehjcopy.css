@@ -155,7 +155,7 @@ html{
 } /*12px = 10vw*/
 
 body {
-    width: 100%; height: 100%;
+    width: 1200px; height: 100%;
     margin: 0;
     font-family: "PermanentMarker-Regular";
     background-color: rgb(55, 147, 255);
@@ -171,7 +171,7 @@ body {
     background-attachment: scroll;
     display: flex;
     justify-content: space-between;
-    font-size: 1.8vw;
+    font-size: 2vw;
 }
 
 #headerL {
@@ -303,7 +303,7 @@ div.about p {
 
 
 #headerMid{
-    margin-top: 1.6%;
+    margin-top: 1.5%;
 }
 
 #headerR {
@@ -319,7 +319,7 @@ div.about p {
     position: fixed;
     list-style-type: none;
     font-size: 1vw;
-    line-height: 2.5vw;
+    line-height: 3vw;
     text-align: left;
 }
 
@@ -329,10 +329,10 @@ div.about p {
 }
 
 #landing, #aboutUs, #roadMap, #whitePaper, #qna {
-    height: 707px;
-    padding: 9% 10% 0 15%;
+    width:100%; height: 707px;
+    padding: 10% 10% 0 15%;
     color: white;
-    /* text-align: center; */
+    text-align: center;
 }
 
 #dDayTimer {
@@ -340,13 +340,16 @@ div.about p {
 }
 
 .landingUndTimTT{
-    font-size: 2vw;
-    /* line-height: 5vw; */
+    font-size: 30px;
+    line-height: 90px;
+}
+
+.p1 {
+    padding: 10px;
 }
 
 #landImg {
-    padding: 5vw;
-    font-size: 1vw;
+    padding: 85px;
 }
 
 #landSign a {
@@ -435,11 +438,11 @@ div.about p {
 
 
 #footer {
-    height: 6%; width: 50%;
-    padding-top: 0.8%; margin: 0 25%;
+    height: 7%; width: 50%;
+    padding-top: 1%; margin: 0 25%;
     position: fixed; bottom: 0; 
     border-top: 0.5px solid rgb(255,255,255,0.3);
     text-align: center;
-    color: white; font-size: 0.5vw;
+    color: white; font-size: 12px;
 }
 
