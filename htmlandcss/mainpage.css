@@ -8,6 +8,11 @@
     font-family: "Coder's Crux";
 }
 
+@font-face {
+    font-family: "DungGeunMo";
+    src: url("../genesisFunction/images/font/DungGeunMo.ttf");
+}
+
 /* 도일 바디&헤더 */
 
 #doilbody {
@@ -394,17 +399,21 @@ ul a {
 .whiteBox2 {
     width: 1000px; height: 500px;
     margin: 40px;
+    padding-top: 5px;
     background-color: white;
     /* text-align: center; */
     color: black;
-    font-family: "Coder's Crux";
+    font-family: "DungGeunMo";
 }
 
 .qWBHead {
     width: 980px;
-    margin: 5px 10px;
-    border: 1px solid black;
-    border-style: dashed solid none dashed solid none;
+    margin: 0 10px;
+    padding: 2px;
+    border-top-style: dashed 2px;
+    /* : 1px solid black; */
+    border-style: dashed none dashed none;
+    stroke-width: 2px;
     display: flex;
     justify-content: space-between;
     font-size: 22px;
