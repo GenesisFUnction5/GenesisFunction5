@@ -8,32 +8,6 @@
     font-family: "Coder's Crux";
 }
 
-body {
-    margin: 0%;
-    font-family: "PermanentMarker-Regular";
-    background-color: rgb(55, 147, 255);
-}
-
-.yellow {
-    color: rgb(255, 245, 0);
-}
-
-.orange {
-    color: rgb(255,122,0);
-}
-
-#header {
-    height: 100px; 
-    width: 100%;
-    /* padding: 30px; */
-    /* background-attachment: fixed; */
-    border-bottom: 0.5px solid rgb(255,255,255,0.3);
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    color: white; font-size: 30px;
-}
-
 /* 도일 바디&헤더 */
 
 #doilbody {
@@ -103,7 +77,6 @@ body {
     font-family: "Coder's Crux";
 }
 
-
 .smiley {
     padding: 100px 0 0 0;
 }
@@ -113,11 +86,34 @@ body {
     font-size: 12px;
     padding: 20px 0 20px 0;
 }
+/* 도일 loadingpage 끝 */
+
+body {
+    margin: 0%;
+    font-family: "PermanentMarker-Regular";
+    background-color: rgb(55, 147, 255);
+}
+
+.yellow {
+    color: rgb(255, 245, 0);
+}
+
+.orange {
+    color: rgb(255,122,0);
+}
 
 
-
-
-
+#header {
+    height: 100px; 
+    width: 100%;
+    /* padding: 30px; */
+    /* background-attachment: fixed; */
+    border-bottom: 0.5px solid rgb(255,255,255,0.3);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: white; font-size: 30px;
+}
 
 #headerL {
     padding-top:35px; padding-left: 50px;
