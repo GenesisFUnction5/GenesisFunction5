@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./mainpage.css">
 </head>
-<body>
+<body id="doilbody">
     <!--헤더  -->
     <div id="doilheader">
 
@@ -25,8 +25,9 @@
        <span class="yellow">genesYs</span><span class="orange">{</span><img src="../genesisFunction/images/Loading/impulseloading.svg" alt=""><span class="orange">}</span><span>;</span>
 
     </div>
+    <div class="bars">
     <div id="loading">
-    <div class="loading">
+    <div class="loadingtext">
         loading...
     </div>
     <div>
@@ -36,6 +37,7 @@
     </div>
     <div class="loadingbar">100%       
     </div>
+</div>
     <script>
             
         const loadingbar = document.querySelector(".loadingbar");
@@ -43,7 +45,7 @@
         setInterval(()=>{
             if(counter == 100) {
                 clearInterval();
-                location.href = "mainpage.html";
+                // location.href = "mainpage.html";
 
             } else {
                 counter += 1;
