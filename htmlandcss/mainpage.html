@@ -13,6 +13,7 @@
     
     <header id="header">
         <div id="headerL">
+            <img src="./icons8-메뉴-30.png" id=myPageBtn>
             <label for="myPageBtn"><img src="./icons8-메뉴-30.png"></label>
 
 <!-- soundtrack -->
@@ -23,7 +24,6 @@
 
 
             <!-- ./icons8-메뉴-30.png : 햄버거 메뉴 모양 소스-->
-            <input id="myPageBtn" type="checkbox">
             <section id="myPageBox">
                 <div id="myPageBox1">
                     <div>menu</div>
@@ -131,28 +131,44 @@
     
     <footer id="footer">WHINDOWS POWERSHELL<br>COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED</footer>
     <script>
-        // document.body.onload = myPageOnOff;
-        let myPageOnOff;
+        let myPageExc;
+        myPageBtn = document.getElementById("myPageBtn")
+        document.getElementById("myPageBox").style.display = "none";
+        myPageExc = function(e) {
+            myPageOn = document.getElementById("myPageBox").style.display;
+            console.log(myPageOn)
 
-        myPageOnOff = function() {
-            myPageChBox = document.getElementById("myPageBtn").checked;
-            if (myPageChBox==false){
-                document.getElementById("myPageBox").style.display = "none";
-                document.getElementById("quickMenu").style.display = "block";
+            if(myPageOn == "none") { //myPage 체크박스가 안되있으면 (꺼져있으면) 클릭할 때
+                if(e.target == myPageBtn) { // target id가 myPageBtn이면
+                    document.getElementById("myPageBox").style.display = "block";
+                    document.getElementById("quickMenu").style.display = "none";
+                    console.log("b");
+                    return;
+                }
+                else { // target이 버튼이 아니라면
+                    console.log("a");
+                }
             }
-            else {
-                document.getElementById("myPageBox").style.display = "block";
-                document.getElementById("quickMenu").style.display = "none";
+            else {//myPage 체크박스가 체크 되있으면 (마이페이지 켜져있으면)
+                if(e.target.id != "myPageBtn") {  //click 타겟의 id가 myPageBtn이 아니면
+                    let tgE1 = e.target;
+                    let myPageBox = tgE1.closest("#myPageBox"); //타겟의 조상중 id가 myPageBox 있는지 찾음
+                    if(!myPageBox) { //타겟의 조상중 myPageBox이 없으면 시행
+                        document.getElementById("myPageBox").style.display = "none";
+                        document.getElementById("quickMenu").style.display = "block";
+                    } 
+                    else {
+                        return;
+                    }
+
+                }
+                else { //click target id가 myPageBtn이면
+                    document.getElementById("myPageBox").style.display = "none";
+                    document.getElementById("quickMenu").style.display = "block";
+                }
             }
         }
-
-        function closeBtn() {
-            document.getElementById("myPageBox").style.display = "none";
-            document.getElementById("quickMenu").style.display = "block";
-        }
-
-        document.getElementById("myPageBtn").addEventListener("click", myPageOnOff);
-        
+        document.body.addEventListener("click", myPageExc);
     </script>
 </body>
 </html>
