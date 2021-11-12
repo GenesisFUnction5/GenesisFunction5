@@ -39,15 +39,19 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
 
 
 #doilbody {
-    height: 100px; 
+    height: 100%;
     width: 100%;
-    /* padding: 30px; */
-    /* background-attachment: fixed; */
-    /* border-bottom: 0.5px solid rgb(255,255,255,0.3); */
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     color: white; font-size: 30px;
     background-color: rgb(55, 147, 255);
+}
+
+.doilmain {
+    
+    width: 100%;
+    text-align: center;
+    /* padding: 120px 150px 500px 350px; */
+
 }
 
 #doilheader {
@@ -65,16 +69,11 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
 }
 
 #doilheader div {
+    
     padding: 30px 40px 0px 40px
 }
 
-.doilmain {
-    height: 1440px;
-    width: 750px;
-    text-align: center;
-    padding: 120px 150px 500px 350px;
 
-}
 
 #genesys {
 
@@ -87,8 +86,8 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
     color: white;
     font-size: 20px;
     font-family: "Coder's Crux";
-    text-align: left;
-    padding: 0 0 0 160px;
+    text-align: c;
+    /* padding: 0 0 0 160px; */
 }
 
 .loading {
@@ -120,7 +119,10 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
 
 
 /* 로딩바 애니메이션 */
-
+.bars {
+    display: flex;
+    justify-content: center;
+}
 
 .progressbar {
 
