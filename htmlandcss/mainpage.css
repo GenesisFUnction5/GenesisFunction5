@@ -317,7 +317,7 @@ div.about p {
 }
 
 #quickMenu{
-    padding-top: 8%; padding-left: 6%;
+    margin-top: 8%; margin-left: 6%;
     position: fixed;
     list-style-type: none;
     font-size: 1vw;
