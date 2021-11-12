@@ -15,10 +15,12 @@
         <div id="headerL">
             <img src="./icons8-메뉴-30.png" id=myPageBtn>
             <!-- soundtrack -->
-            <iframe src="./music/zero.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+            <!-- <iframe src="./music/zero.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
             <audio controls autoplay style="width: 100px; height: 15px;" >
                 <source src="./music/zero.mp3" type="audio/mp3">
-            </audio>
+            </audio> -->
+
+
             <section id="myPageBox">
                 <div id="myPageBox1">
                     <div>menu</div>
@@ -77,9 +79,24 @@
             <div id="landing">
                 <div id=dDayTimer><span class="orange">{ </span> 디 데 이 시 간 <span class="orange"> }</span>;</div>
                 <div class="landingUndTimTT"><span class="yellow">first ever nft airdop of genesisFunction</span></div>
-                <div id="landImg"><img src="">이미지<br>the gFighter-1</div>
+                <div id="landImg">
+                    <audio id="audio" src="./music/zero.mp3"></audio>
+                    <img value="PLAY" id="qbox" src="../genesisFunction/images/landing/qbox-cutout.png" onclick="gfighter();" ><br></div>
                 <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="./landing/smiley.svg">}</span>;</label></a></div>
             </div>
+            
+                <!-- 뮤직,이미지 -->
+                <script>
+                 
+
+                    function gfighter() {
+                        document.getElementById("qbox").src ="../genesisFunction/images/landing/gfighter.png";
+                        var audio = document.getElementById("audio");
+                        audio.play();
+                    }
+                </script>
+
+
             <div id="aboutUs">
                 <div class="aboutUsPageHead">aboutUs<span class="yellow">()</span>;</div>
                 <img src="./aboutus/aboutus.svg">
@@ -165,4 +182,6 @@
         document.body.addEventListener("click", myPageExc);
     </script>
 </body>
+
+
 </html>
