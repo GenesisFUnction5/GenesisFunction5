@@ -75,9 +75,10 @@
         <li><a href="#whitePaper">white_Paper</a></li>            
         <li><a href="#qna">QnA</a></li>
     </ul>
+
     <nav>
             <div id="landing">
-                <div id=dDayTimer><span class="orange">{ </span> 디 데 이 시 간 <span class="orange"> }</span>;</div>
+                <div id=dDayTimer><span class="orange">{ </span><span id="timer"></span><span class="orange"> }</span>;</div>
                 <div class="landingUndTimTT"><span class="yellow">first ever nft airdop of genesisFunction</span></div>
                 <div id="landImg">
                     <audio id="audio" src="./music/zero.mp3"></audio>
@@ -103,7 +104,6 @@
             </div>          
             <div id="roadMap">
                 <div class="future">futuRe<span class="yellow">()</span>;</div>
-                <p class="p2"></p>
                 <div>< ></div>
                 <div>타임라인</div>
             </div>
@@ -115,7 +115,7 @@
                         <div class="wPBC">< ></div>
                         <div class="wPBC1">10,000 UNIQUE COLEECTIBLE CHARACTERS<br>WITH PROOF OF OWNERSHIP STORED ON THE<br>KLAYTN BLOCKCHAIN.</div>
                         <div class="wPBC2">
-                            THE PROJECT THAT INSPIRED THE MODERN CRYPTOART MOVEMENT.<br>SELECTED PRESS AND APPEARANCES INCLUDE
+                            THE PROJECT THAT INSPIRED THE MODERN CRYPTOART MOVEMENT.<br>SELECTED PRESS AND APPEARANCES INCLUDE<br>
                             MASHABLE, CNBC, THE FINANCIAL TIMES, BLOOMBERG, MARKETWATCH,<br>THE PARIS REVIEW, SALON,<br>
                             THE OUTLINE, BREAKERMAG, CHRISTIE'S OF LONDON, ARTIBASEL,<br>THE PBS NEWSHOVER,<br>THE NEW YORK TIMES IN 2018 AND AGAIN IN 2021.
                         </div>
@@ -130,17 +130,39 @@
             </div>
             <div id="qna">
                 <div class="qnaHead">QNA<span class="yellow">()</span>;</div>
-                <div class="whiteBox2">
-                    <div class="qWBHead">
+                <div class="qnaBox">
+                    <div class="qBHead">
                         <div>TOP</div><div>초기화면</div><div>http://www.genesysfunction.com</div>
                     </div>
-                    <div></div>
+                    <div class="qBContent">
+                        <div class="qBC1">>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> </div>
+                        <div class="qBC2">
+                            <div class="hot">
+                                <div>>HOT</div>
+                                <div class="hotCont">HOT</div>
+                                <!--게시글이 하나 생길 때 다른 div 내려가는 것 해결해야함.-->
+                            </div>
+                            <div class="board">
+                                <div>>게시판</div>
+                                <div class="boardCont">게시판</div>
+                            </div>
+                            <div class="service">[ 기본서비스 ] <input type="button" value="1.글쓰기"> <input type="button" value="2.편집"> <input type="button" value="3.지우기"> </div>
+                        </div>
+                        <div class="qBC3">
+                            /\_____/\<br>/  o   o  \<br>( ==  ^  == )<br>)         (<br>(           )<br>( (  )   (  ) )<br>(__(__)___(__)__)
+                        </div>
+                    </div>
                 </div>
             </div>
         
     </nav>
     
-    <footer id="footer">WHINDOWS POWERSHELL<br>COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED</footer>
+    <footer>
+        <div id="footer">
+            WHINDOWS POWERSHELL<br>
+            COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED
+        </div>
+    </footer>
     <script>
         let myPageOnOff;
         myPageBtn = document.getElementById("myPageBtn")
@@ -188,6 +210,19 @@
         // var element = document.getElementById("roadMap");
         // element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
 
+        //디데이 타이머
+        var dday = new Date("November 16, 2021, 00:00:00").getTime();
+
+        setInterval (function() {
+            var today = new Date().getTime();
+            var gap = dday - today;
+            var day = Math.ceil(gap / (1000 * 60 * 60 *24));
+            var hour = Math.ceil((gap % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+            var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
+            var sec = Math.ceil((gap % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec ;
+        }, 1000);
 
     </script>
 </body>
