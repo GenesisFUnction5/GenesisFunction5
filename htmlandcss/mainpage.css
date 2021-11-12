@@ -16,11 +16,6 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
 }
 
 @font-face {
-    src: url("./Coder\'s\ Crux.ttf") ;
-    font-family: "Coder's Crux";
-}
-
-@font-face {
     font-family: "DungGeunMo";
     src: url("../genesisFunction/images/font/DungGeunMo.ttf");
 }
@@ -183,9 +178,6 @@ body {
 /* 마이페이지 팝업 */
 
 
-input#myPageBtn {
-    display: none;
-}
 
 section#myPageBox {
     z-index: 3;
