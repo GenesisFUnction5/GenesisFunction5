@@ -81,16 +81,16 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
     color: white;
     font-size: 20px;
     font-family: "Coder's Crux";
-    text-align: c;
+    text-align: left;
     /* padding: 0 0 0 160px; */
 }
 
-.loading {
-    padding: 0px 0px 8px 3px;
+.loadingtext {
+    padding: 0px 0px 5px 3px;
 }
 
 .loadingbar {
-    padding: 7px 0px 0px 3px;
+    padding: 6px 0px 0px 3px;
 }
 
 .exit {
@@ -136,7 +136,7 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
     background-color: rgb(255,122,0);
     border-radius: 25px;
     position: absolute;
-    animation: progress-animation 5s 1;
+    animation: progress-animation 15s 1;
 
 }
 

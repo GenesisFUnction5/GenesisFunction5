@@ -7,7 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./mainpage.css">
 </head>
+
+
 <body id="doilbody">
+
     <!--헤더  -->
     <div id="doilheader">
 
@@ -45,13 +48,13 @@
         setInterval(()=>{
             if(counter == 100) {
                 clearInterval();
-                // location.href = "mainpage.html";
+                location.href = "mainpage.html";
 
             } else {
                 counter += 1;
                 loadingbar.textContent = counter + "% loaded...";
             }
-        }, 45);
+        }, 110);
     </script>
     </div>
 
