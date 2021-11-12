@@ -334,9 +334,14 @@ div.about p {
 }
 
 #landImg {
-    padding: 5vw;
+    padding: 2vw;
     font-size: 1vw;
     font-family: "Coder's Crux";
+}
+
+#qbox {
+    width: 11vw;
+    height: auto;
 }
 
 #landSign a {
@@ -413,9 +418,8 @@ div.about p {
 .qBHead {
     margin: 1vh;
     padding: 0.2vw;
-    border-top: 1px solid black;
-    /* border-top-style: dashed 1px solid black; */
-    /* border-style: dashed none dashed none; */
+    border-style: dashed none dashed none;
+    border-width: thin;
     display: flex;
     justify-content: space-between;
     font-size: 1vw;
@@ -438,7 +442,7 @@ div.about p {
     vertical-align: top;
 }
 
-hot {
+.hot {
     margin-top: 5vw;
 }
 

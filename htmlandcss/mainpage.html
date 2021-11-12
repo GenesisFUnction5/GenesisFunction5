@@ -82,22 +82,9 @@
                 <div class="landingUndTimTT"><span class="yellow">first ever nft airdop of genesisFunction</span></div>
                 <div id="landImg">
                     <audio id="audio" src="./music/zero.mp3"></audio>
-                    <img value="PLAY" id="qbox" src="../genesisFunction/images/landing/qbox-cutout.png" onclick="gfighter();" ><br></div>
+                    <img value="PLAY" id="qbox" src="../genesisFunction/images/landing/qbox-cutout.png" onclick="gfighter();" ></div>
                 <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="./landing/smiley.svg">}</span>;</label></a></div>
             </div>
-            
-                <!-- 뮤직,이미지 -->
-                <script>
-                 
-
-                    function gfighter() {
-                        document.getElementById("qbox").src ="../genesisFunction/images/landing/gfighter1.gif";
-                        var audio = document.getElementById("audio");
-                        audio.play();
-                    }
-                </script>
-
-
             <div id="aboutUs">
                 <div class="aboutUsPageHead">aboutUs<span class="yellow">()</span>;</div>
                 <img src="./aboutus/aboutus.svg">
@@ -153,16 +140,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        
+            </div>    
     </nav>
-    
-    <footer>
-        <div id="footer">
-            WHINDOWS POWERSHELL<br>
-            COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED
-        </div>
-    </footer>
+    <footer><div id="footer">WHINDOWS POWERSHELL<br>COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED</div></footer>
     <script>
         let myPageOnOff;
         myPageBtn = document.getElementById("myPageBtn")
@@ -211,6 +191,7 @@
         // element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
 
         //디데이 타이머 시작
+        //웹페이지에 로딩될 때 나오는 시간이 너무 느림. 해결해야함.
         var dday = new Date("November 16, 2021, 00:00:00").getTime();
 
         setInterval (function() {
@@ -224,8 +205,14 @@
             document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec ;
         }, 1000);
         //디데이 타이머 끝
+
+       //Landing page 이미지 음악 시작
+        function gfighter() {
+            document.getElementById("qbox").src ="../genesisFunction/images/landing/gfighter1.gif";
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+        //Landing page 이미지 음악 시작
     </script>
 </body>
-
-
 </html>
