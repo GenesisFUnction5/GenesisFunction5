@@ -28,6 +28,9 @@ Ctrl + g : 숫자 입력 후 엔터 누르면 해당 줄로 이동
     color: rgb(255,122,0);
 }
 
+.Btn {
+    cursor: pointer;
+}
 /* 도일 바디&헤더 */
 #doilbody {
     height: 100%;
