@@ -201,7 +201,16 @@
             var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-            document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : " + sec ;
+            if(sec == 60) {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + (min+1) + " : 00" ;
+            }
+            else if(sec<10) {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : 0" +sec ;
+            }
+            else {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : " +sec ;
+            }
+            
         }, 100);
         //디데이 타이머 끝
 
