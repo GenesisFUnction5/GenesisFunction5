@@ -301,8 +301,9 @@ div.about p {
 
 #quickMenu{
     height: 70vh;
+    width: 17vh;
     border-right: 1px solid rgb(255,255,255,0.2);
-    margin-top: 8%; margin-left: 6%;
+    margin-top: 8%; margin-left: 2.5%;
     padding-right: 1vw;
     position: fixed;
     list-style-type: none;
@@ -310,6 +311,7 @@ div.about p {
     line-height: 2.5vw;
     text-align: left;
 }
+
 
 #quickMenu a {
     text-decoration: none;
