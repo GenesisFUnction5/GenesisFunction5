@@ -267,14 +267,14 @@ div.about p {
 }
 
 #myPageBox4 {
-    height: 203px;
+    height: 198px;
     padding: 2px;
     background-color: white; border: 1.2px solid black;
     color: black;
 }
 
 #myPageBox4InBox {
-    height: 202px; width: 622px;
+    height: 199px; width: 622px;
     border: 1px;
     box-shadow: 2px 2px 0px 0px;
 }
@@ -292,7 +292,7 @@ div.about p {
 }
 
 .aboutMeContent {
-    height: 148px;
+    height: 146px;
     padding: 8px;
     /* background-color: cornflowerblue; */
     background-image: url(./myPAGE/Swatch.svg);
