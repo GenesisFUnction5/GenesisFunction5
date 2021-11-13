@@ -183,12 +183,14 @@ section#myPageBox {
 }
 
 #myPageBox1 {
+    background-image: url(./myPAGE/pattern.svg);
+    background-size: cover;
     height: 25px;
     padding: 0px 0px 0px 15px;
     display: flex;
     justify-content: space-between;
-    background-color: grey;
     color: white;
+    border: solid 2px black;
 }
 
 #myPageBox1 div {
@@ -225,6 +227,7 @@ section#myPageBox {
     height: 200px; width: 300px;
     background-color: white;
     border: 1.5px solid black;
+    text-align: left;
 }
 
 .aboutTP{
