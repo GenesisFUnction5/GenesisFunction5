@@ -7,13 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./mainpage.css">
     <link href="//db.onlinewebfonts.com/c/72ead4a017593b5ca3413f1e665912ae?family=Coder's+Crux" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <!--<div>미리 보기에 나올 장면</div>-->
     
     <header id="header">
         <div id="headerL">
-            <img src="./icons8-메뉴-30.png" id=myPageBtn class="Btn">
+            <img src="../genesisFunction/images/console.svg" id=myPageBtn class="Btn">
             <!-- soundtrack -->
             <!-- <iframe src="./music/zero.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
             <audio controls autoplay style="width: 100px; height: 15px;" >
@@ -60,7 +63,7 @@
             </section>
         </div>
         <div id="headerMid">
-            <span class="yellow">genesYs</span><span class="orange">{<img src="../genesisFunction/images/landing/impulse.svg" alt="">}</span>; > <img src="../genesisFunction/images/landing/folder.svg" alt=""> ./pre_0rder.html
+            <span class="yellow">genesYs</span><span class="orange">{<img src="../genesisFunction/images/landing/impulse.svg" alt="">}</span>; > <img src="../genesisFunction/images/landing/folder.svg" alt=""> <span id="menuName">./pre_0rder.html</span>
         </div>
         <div id="headerR">
             <div>
@@ -69,11 +72,11 @@
         </div>
     </header>
     <ul id=quickMenu>
-        <li><a href="#landing">landinG<span class="yellow">()</span>;</a></li>
-        <li><a href="#aboutUs">about_Us</a></li>
-        <li><a href="#roadMap">road_Map</a></li>
-        <li><a href="#whitePaper">white_Paper</a></li>            
-        <li><a href="#qna">QnA</a></li>
+        <li><a href="#landing"><span id="jquery1">landinG</span><span class="yellow">()</span>;</a></li>
+        <li><a href="#aboutUs"><span id="jquery2">about_Us</span></a></li>
+        <li><a href="#roadMap"><span id="jquery3">road_Map</span></a></li>
+        <li><a href="#whitePaper"><span id="jquery4">white_Paper</span></a></li>            
+        <li><a href="#qna"><span id="jquery5">QnA</span></a></li>
     </ul>
     <nav>
             <div id="landing">
@@ -82,7 +85,7 @@
                 <div id="landImg">
                     <audio id="audio" src="./music/zero.mp3"></audio>
                     <img value="PLAY" id="qbox" src="../genesisFunction/images/landing/qbox-cutout.png" onclick="gfighter();" class="Btn"></div>
-                <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="./landing/smiley.svg">}</span>;</label></a></div>
+                <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="../genesisFunction/images/signin.svg">}</span>;</label></a></div>
             </div>
             <div id="aboutUs">
                 <div class="aboutUsPageHead">aboutUs<span class="yellow">()</span>;</div>
@@ -213,8 +216,17 @@
             var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-            document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec;
-        }, 0);
+            if(sec == 60) {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + (min+1) + " : 00" ;
+            }
+            else if(sec<10) {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : 0" +sec ;
+            }
+            else {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : " +sec ;
+            }
+
+        }, 100);
         //디데이 타이머 끝
 
        //Landing page 이미지 음악 시작
@@ -224,6 +236,24 @@
             audio.play();
         }
         //Landing page 이미지 음악 시작
+
+        //header 문자 변경 -> 메뉴 별로 //
+
+        $("#jquery1").click(function() {
+            $("#menuName").text("landinG()")
+        })
+        $("#jquery2").click(function() {
+            $("#menuName").text("about_us")
+        })
+        $("#jquery3").click(function() {
+            $("#menuName").text("road_map")
+        })
+        $("#jquery4").click(function() {
+            $("#menuName").text("white_paper")
+        })
+        $("#jquery5").click(function() {
+            $("#menuName").text("qna")
+        })
 
     </script>
 </body>
