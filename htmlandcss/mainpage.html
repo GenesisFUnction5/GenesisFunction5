@@ -13,7 +13,7 @@
     
     <header id="header">
         <div id="headerL">
-            <img src="./icons8-메뉴-30.png" id=myPageBtn>
+            <img src="./icons8-메뉴-30.png" id=myPageBtn class="Btn">
             <!-- soundtrack -->
             <!-- <iframe src="./music/zero.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
             <audio controls autoplay style="width: 100px; height: 15px;" >
@@ -26,7 +26,7 @@
                     <div>menu</div>
                     <div class="userName">"Steve Jobs"</div>
                     <div>
-                        <img src="./myPAGE/Windows.svg" id="closeBtn">
+                        <img src="./myPAGE/Windows.svg" id="closeBtn" class="Btn">
                     </div>
                 </div>
                 <div id="myPageBox2">
@@ -82,7 +82,7 @@
                 <div class="landingUndTimTT"><span class="yellow">first ever nft airdop of genesisFunction</span></div>
                 <div id="landImg">
                     <audio id="audio" src="./music/zero.mp3"></audio>
-                    <img value="PLAY" id="qbox" src="../genesisFunction/images/landing/qbox-cutout.png" onclick="gfighter();" ></div>
+                    <img value="PLAY" id="qbox" src="../genesisFunction/images/landing/qbox-cutout.png" onclick="gfighter();" class="Btn"></div>
                 <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="./landing/smiley.svg">}</span>;</label></a></div>
             </div>
             <div id="aboutUs">
@@ -191,7 +191,6 @@
         // element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
 
         //디데이 타이머 시작
-        //웹페이지에 로딩될 때 나오는 시간이 너무 느림. 해결해야함.
         var dday = new Date("November 16, 2021, 00:00:00").getTime();
 
         setInterval (function() {
@@ -203,7 +202,7 @@
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
             document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec ;
-        }, 1000);
+        }, 0);
         //디데이 타이머 끝
 
        //Landing page 이미지 음악 시작
@@ -213,6 +212,7 @@
             audio.play();
         }
         //Landing page 이미지 음악 시작
+
     </script>
 </body>
 </html>
