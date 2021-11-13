@@ -36,10 +36,10 @@
                     <div class="aboutMe">
                         <div class="aboutTP">about this person;</div>
                         <div class="about">
-                            <div class="test" style="display: flex;">
+                            <!-- <div class="test" style="display: flex;">
                                 <img src="./myPAGE/icons/alarm-clock.svg">
                                 <p>nextAirDrop();</p>
-                            </div>
+                            </div> -->
                             <p>nextAirDrop();</p>
                             <p>myAsset();</p>
                             <p>myQ&A();</p>
@@ -75,7 +75,6 @@
         <li><a href="#whitePaper">white_Paper</a></li>            
         <li><a href="#qna">QnA</a></li>
     </ul>
-
     <nav>
             <div id="landing">
                 <div id=dDayTimer><span class="orange">{ </span><span id="timer"></span><span class="orange"> }</span>;</div>
@@ -90,9 +89,22 @@
                 <img src="./aboutus/aboutus.svg">
             </div>          
             <div id="roadMap">
-                <div class="future">futuRe<span class="yellow">()</span>;</div>
-                <div>< ></div>
-                <div>타임라인</div>
+                <div class="future">FUTURE<span class="yellow">()</span>;</div>
+                <div class="roadMapCont">
+                    <div class="roadMapContOpen">< ></div>
+                    <div>
+                        <div class="timestamp">
+                            <div>12/31</div><div>01/01</div><div>01/02</div><div>01/03</div><div>01/04</div><div>01/05</div><div>01/06</div><div>01/07</div><div>01/08</div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeText1">NFT</div>
+                            <div class="timeText2">MAINNET</div>
+                            <div class="timeText3">DEFI</div>
+                            <div class="timeText4">TO THE MOON</div>
+                        </div>
+                    </div>
+                    <div class="roadMapContClos">< / ></div>
+                </div>
             </div>
             <div id="whitePaper">
                 <div class="whitePaperHead">whitePaper<span class="yellow">()</span>;</div>
@@ -201,7 +213,7 @@
             var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-            document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec ;
+            document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec;
         }, 0);
         //디데이 타이머 끝
 
