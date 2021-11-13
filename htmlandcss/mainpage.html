@@ -197,11 +197,13 @@
             </div>    
     </nav>
     <footer><div id="footer">WHINDOWS POWERSHELL<br>COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED</div></footer>
+    
+    
     <script>
-        let myPageOnOff;
+        //마이페이지 온오프 시작
+        let myPageOnOff; 
         myPageBtn = document.getElementById("myPageBtn")
         document.getElementById("myPageBox").style.display = "none";
-        
         myPageOnOff = function(e) {
             myPageDisplay = document.getElementById("myPageBox").style.display;
 
@@ -233,16 +235,21 @@
                 }
             }
         }
-
         document.addEventListener("click", myPageOnOff);
-
-        // document.addEventListener("scroll", function() {
-        //     var currentScrollValue = document.documentElement.scrollTop;
-        //     console.log('currentScrollValue is ' + currentScrollValue);
-        // });
+        //마이페이지 온오프 끝
         
-        // var element = document.getElementById("roadMap");
-        // element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+
+        // 페이지이동 시작
+        // let pageFunc;
+        // pageFunc = function() {
+        //     var element = document.getElementById("roadMap");
+        //     element.scrollIntoView({behavior: "auto", block: "start", inline: "start"});
+
+        // }
+        // document.addEventListener("scroll", scrollFunc)
+
+        // 페이지이동 끝
+
 
         //디데이 타이머 시작
         var dday = new Date("November 16, 2021, 00:00:00").getTime();
@@ -268,16 +275,18 @@
         }, 100);
         //디데이 타이머 끝
 
+
        //Landing page 이미지 음악 시작
         function gfighter() {
             document.getElementById("qbox").src ="../genesisFunction/images/landing/gfighter1.gif";
             var audio = document.getElementById("audio");
             audio.play();
         }
-        //Landing page 이미지 음악 시작
+        //Landing page 이미지 음악 끝
 
         //header 문자 변경 -> 메뉴 별로 //
 
+        
         $("#jquery1").click(function() {
             $("#menuName").text("landinG.html")
         })
@@ -293,6 +302,8 @@
         $("#jquery5").click(function() {
             $("#menuName").text("QnA.html")
         })
+
+
 
     </script>
 </body>
