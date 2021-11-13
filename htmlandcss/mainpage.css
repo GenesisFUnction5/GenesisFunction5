@@ -226,10 +226,11 @@ section#myPageBox {
 }
 
 .aboutMe {
-    height: 200px; width: 300px;
+    width: 300px;
     background-color: white;
     border: 2px solid black;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .aboutTP{
@@ -240,6 +241,7 @@ section#myPageBox {
 
 .aboutMenu{
     display: flex;
+    align-items: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-bottom: 4px;
@@ -247,7 +249,7 @@ section#myPageBox {
 
 div.about p {
     margin: 3px 0;
-    padding: 3px 0px 2px 15px;
+    padding: 6px 0px 2px 4px;
     /* overflow: hidden; 아이콘이 안보여서 test로 넣음*/
 }
 
@@ -277,19 +279,23 @@ div.about p {
 }
 
 .aboutMeContentT {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     height: 25px;
-    padding-top: 10px; padding-bottom: 1px;
+    padding: 10px 6px 6px 6px; 
     border: 1px solid black;
-    /* display: flex;
-    justify-content: space-between; */
     text-align: center;
+    background-image: url('./myPAGE/pattern2.svg');
+    background-size: cover;
 }
 
 .aboutMeContent {
     height: 148px;
     padding: 8px;
     /* background-color: cornflowerblue; */
-    background-image: url(./myPAGE/battery.svg);
+    background-image: url(./myPAGE/Swatch.svg);
+    background-size: cover;
     border-left: 2px solid black;
     color : white;
 }
