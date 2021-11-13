@@ -389,6 +389,82 @@ div.about p {
     height: auto;
 }
 
+.roadMapCont {
+    max-width: 45.8vw;
+    margin: 5% 0 0 19%;
+}
+
+.timestamp {
+    font-size: 0.5vw;
+    max-width: 45.8vw;
+    border-bottom: 3px solid rgb(255,122,0);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 245, 0);
+}
+
+.timestamp > div {
+    display: inline-block;
+    transform: rotate(300deg);
+    margin: 0.8vw;
+}
+
+.timestamp>div::before{
+  content: "";
+  width: 1vw;
+  height: 0.2vw;
+  transform: rotate(330deg);
+  background-color: rgb(255,122,0);
+  position:fixed;
+  left: -1.3vw;
+}
+
+.timeline {
+    width: 45.8vw;
+    padding-top: 1.6vw;
+}
+
+.timeline > div {
+    display: inline-block;
+    border: dashed 1px rgb(255,122,0);
+    padding: 1vw 0.8vw;
+    font-size: 1.5vw;
+}
+
+.timeText1 {
+    width: 23%;
+    background-color: rgb(255,122,0);
+}
+
+.timeText2 {
+    width: 20%;
+    color: rgb(255, 245, 0);
+}
+
+.timeText3 {
+    width: 8%;
+    background-color: rgb(299,299,299);
+    color: rgb(55, 147, 255);
+}
+
+.timeText4 {
+    width: 31%;
+    background-color: rgb(255, 245, 0);
+    color: rgb(255,122,0);
+}
+
+.roadMapContOpen{
+    text-align: left;
+    margin: 2vw;
+    font-size: 1.5vw;
+}
+
+.roadMapContClos{
+    text-align: right;
+    margin: 2vw;
+    font-size: 1.5vw;
+}
+
 .whiteBox {
     max-width: 45.8vw;
     height: auto;
@@ -505,10 +581,16 @@ div.about p {
     vertical-align: top;
     text-align: center;
 }
-#footer { /*body의 center가 안먹는 이유는?*/
-    height: 6%; width: 30%;
-    padding-top: 0.8%; margin: 0 35%;
+
+
+#footer{ /*body의 center가 안먹는 이유는?*/
+    height: 6%;
+    width: 100%;
+    padding-top: 0.8%;
+    /* margin: 0 35%; */
     position: fixed; bottom: 0; 
+    background-color: rgb(55, 147, 255);
+    background-attachment: scroll;
     border-top: 0.5px solid rgb(255,255,255,0.2);
     color: white; font-size: 0.5vw;
 }

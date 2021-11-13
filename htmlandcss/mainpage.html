@@ -95,7 +95,6 @@
         <li><a href="#whitePaper"><span id="jquery4">white_Paper</span></a></li>            
         <li><a href="#qna"><span id="jquery5">QnA</span></a></li>
     </ul>
-
     <nav>
             <div id="landing">
                 <div id=dDayTimer><span class="orange">{ </span><span id="timer"></span><span class="orange"> }</span>;</div>
@@ -103,16 +102,29 @@
                 <div id="landImg">
                     <audio id="audio" src="./music/zero.mp3"></audio>
                     <img value="PLAY" id="qbox" src="../genesisFunction/images/landing/qbox-cutout.png" onclick="gfighter();" class="Btn"></div>
-                <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="./landing/smiley.svg">}</span>;</label></a></div>
+                <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="../genesisFunction/images/signin.svg">}</span>;</label></a></div>
             </div>
             <div id="aboutUs">
                 <div class="aboutUsPageHead">aboutUs<span class="yellow">()</span>;</div>
                 <img src="./aboutus/aboutus.svg">
             </div>          
             <div id="roadMap">
-                <div class="future">futuRe<span class="yellow">()</span>;</div>
-                <div>< ></div>
-                <div>타임라인</div>
+                <div class="future">FUTURE<span class="yellow">()</span>;</div>
+                <div class="roadMapCont">
+                    <div class="roadMapContOpen">< ></div>
+                    <div>
+                        <div class="timestamp">
+                            <div>12/31</div><div>01/01</div><div>01/02</div><div>01/03</div><div>01/04</div><div>01/05</div><div>01/06</div><div>01/07</div><div>01/08</div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeText1">NFT</div>
+                            <div class="timeText2">MAINNET</div>
+                            <div class="timeText3">DEFI</div>
+                            <div class="timeText4">TO THE MOON</div>
+                        </div>
+                    </div>
+                    <div class="roadMapContClos">< / ></div>
+                </div>
             </div>
             <div id="whitePaper">
                 <div class="whitePaperHead">whitePaper<span class="yellow">()</span>;</div>
@@ -221,8 +233,17 @@
             var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-            document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec ;
-        }, 0);
+            if(sec == 60) {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + (min+1) + " : 00" ;
+            }
+            else if(sec<10) {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : 0" +sec ;
+            }
+            else {
+                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : " +sec ;
+            }
+
+        }, 100);
         //디데이 타이머 끝
 
        //Landing page 이미지 음악 시작
@@ -236,47 +257,20 @@
         //header 문자 변경 -> 메뉴 별로 //
 
         $("#jquery1").click(function() {
-            $("#menuName").text("landinG()")
+            $("#menuName").text("landinG.html")
         })
         $("#jquery2").click(function() {
-            $("#menuName").text("about_us")
+            $("#menuName").text("about_Us.html")
         })
         $("#jquery3").click(function() {
-            $("#menuName").text("road_map")
+            $("#menuName").text("road_Map.html")
         })
         $("#jquery4").click(function() {
-            $("#menuName").text("white_paper")
+            $("#menuName").text("white_Paper.html")
         })
         $("#jquery5").click(function() {
-            $("#menuName").text("qna")
+            $("#menuName").text("QnA.html")
         })
-
-
-
-        function navText1() {
-           let navText = "./landinG.html";
-           document.getElementById("navtext").innerHTML = navText; 
-        }
-
-        function navText2() {
-           let navText = "./about_Us.html";
-           document.getElementById("navtext").innerHTML = navText; 
-        }
-        function navText3() {
-           let navText = "./road_Map.html";
-           document.getElementById("navtext").innerHTML = navText; 
-        }
-
-        function navText4() {
-           let navText = "./white_Paper";
-           document.getElementById("navtext").innerHTML = navText; 
-        }
-
-        function navText5() {
-           let navText = "./QnA" ;
-           document.getElementById("navtext").innerHTML = navText; 
-        }
-
 
     </script>
 </body>
