@@ -7,13 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./mainpage.css">
     <link href="//db.onlinewebfonts.com/c/72ead4a017593b5ca3413f1e665912ae?family=Coder's+Crux" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <!--<div>미리 보기에 나올 장면</div>-->
     
     <header id="header">
         <div id="headerL">
-            <img src="../genesisFunction/images/console.svg" id=myPageBtn class="Btn" width="32px">
+            <img src="./icons8-메뉴-30.png" id=myPageBtn class="Btn">
             <!-- soundtrack -->
             <!-- <iframe src="./music/zero.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
             <audio controls autoplay style="width: 100px; height: 15px;" >
@@ -75,7 +78,7 @@
             </section>
         </div>
         <div id="headerMid">
-            <span class="yellow">genesYs</span><span class="orange">{<img src="../genesisFunction/images/landing/impulse.svg" alt="">}</span>; > <img src="../genesisFunction/images/landing/folder.svg" alt=""><span id="navtext">./pre_0rder.html</span>
+            <span class="yellow">genesYs</span><span class="orange">{<img src="../genesisFunction/images/landing/impulse.svg" alt="">}</span>; > <img src="../genesisFunction/images/landing/folder.svg" alt=""> <span id="menuName">./pre_0rder.html</span>
         </div>
         <div id="headerR">
             <div>
@@ -83,12 +86,12 @@
             </div>        
         </div>
     </header>
-    <ul id="quickMenu">
-        <li onclick="navigation();" value="./landinG.html" class="navigation"><a href="#landing">landinG<span class="yellow">()</span>;</a></li>
-        <li onclick="navigation();" value="./about_Us.html" class="navigation"><a href="#aboutUs">about_Us</a></li>
-        <li onclick="navigation();" value="./road_Map.html" class="navigation"><a href="#roadMap">road_Map</a></li>
-        <li onclick="navigation();" value="./white_Paper" class="navigation"><a href="#whitePaper">white_Paper</a></li>            
-        <li onclick="navigation();" value="./QnA" class="navigation"><a href="#qna">QnA</a></li>
+    <ul id=quickMenu>
+        <li><a href="#landing"><span id="jquery1">landinG</span><span class="yellow">()</span>;</a></li>
+        <li><a href="#aboutUs"><span id="jquery2">about_Us</span></a></li>
+        <li><a href="#roadMap"><span id="jquery3">road_Map</span></a></li>
+        <li><a href="#whitePaper"><span id="jquery4">white_Paper</span></a></li>            
+        <li><a href="#qna"><span id="jquery5">QnA</span></a></li>
     </ul>
 
     <nav>
@@ -216,17 +219,8 @@
             var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-            if(sec == 60) {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + (min+1) + " : 00" ;
-            }
-            else if(sec<10) {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : 0" +sec ;
-            }
-            else {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : " +sec ;
-            }
-            
-        }, 100);
+            document.getElementById("timer").innerHTML = day + ":" + hour + ":" + min + ":" + sec ;
+        }, 0);
         //디데이 타이머 끝
 
        //Landing page 이미지 음악 시작
@@ -237,13 +231,25 @@
         }
         //Landing page 이미지 음악 시작
 
-        // header navigation text.
+        //header 문자 변경 -> 메뉴 별로 //
 
-        function navigation() {
-            document.getElementsByClassName("navigation")[i] = 
-            console.log(i);
-            document.getElementById("navtext").value = navText;
-        }
+        $("#jquery1").click(function() {
+            $("#menuName").text("landinG()")
+        })
+        $("#jquery2").click(function() {
+            $("#menuName").text("about_us")
+        })
+        $("#jquery3").click(function() {
+            $("#menuName").text("road_map")
+        })
+        $("#jquery4").click(function() {
+            $("#menuName").text("white_paper")
+        })
+        $("#jquery5").click(function() {
+            $("#menuName").text("qna")
+        })
+
+
     </script>
 </body>
 </html>
