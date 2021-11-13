@@ -183,21 +183,25 @@ section#myPageBox {
 }
 
 #myPageBox1 {
+    background-image: url(./myPAGE/pattern.svg);
+    background-size: cover;
     height: 25px;
-    padding: 0px 0px 0px 15px;
     display: flex;
     justify-content: space-between;
-    background-color: grey;
     color: white;
+    border: solid 2px black;
 }
 
-#myPageBox1 div {
-    padding: 5px;
+.myPageBox1_menu {
+    display: flex;
+    align-items: center;
 }
 
 #myPageBox1 .userName{
     background-color: black;
     padding-left: 28px; padding-right: 28px;
+    display: flex;
+    align-items: center;
 }
 
 #myPageBox2 {
@@ -222,9 +226,11 @@ section#myPageBox {
 }
 
 .aboutMe {
-    height: 200px; width: 300px;
+    width: 300px;
     background-color: white;
-    border: 1.5px solid black;
+    border: 2px solid black;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .aboutTP{
@@ -233,10 +239,18 @@ section#myPageBox {
     border-bottom: 2.7px solid black;
 }
 
+.aboutMenu{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 4px;
+    padding-left: 4px;
+}
+
 div.about p {
-    border-top: 1px solid black; border-bottom: 1px solid black;
     margin: 3px 0;
-    padding: 3px 0px 2px 15px;
+    padding: 6px 0px 2px 4px;
     /* overflow: hidden; 아이콘이 안보여서 test로 넣음*/
 }
 
@@ -266,21 +280,34 @@ div.about p {
 }
 
 .aboutMeContentT {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     height: 25px;
-    padding-top: 10px; padding-bottom: 1px;
+    padding: 6px; 
     border: 1px solid black;
-    /* display: flex;
-    justify-content: space-between; */
     text-align: center;
+    background-image: url(./myPAGE/patternlines.svg);
+    background-size: 80% 80%;
 }
 
 .aboutMeContent {
     height: 148px;
     padding: 8px;
     /* background-color: cornflowerblue; */
-    background-image: url(./myPAGE/battery.svg);
+    background-image: url(./myPAGE/Swatch.svg);
+    background-size: cover;
     border-left: 2px solid black;
-    color : white;
+    color : black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aboutMenuSelected {
+    background-color: white;
+    padding: 4px 4px 10px 4px;
 }
 
 /* 마이페이지 팝업 끝 */
@@ -534,7 +561,6 @@ div.about p {
 
 .hotCont, .boardCont {
     margin-left: 7vw;
-    text-align: center;
 }
 
 .board {
