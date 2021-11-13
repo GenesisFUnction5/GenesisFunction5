@@ -357,10 +357,21 @@ div.about p {
     font-size: 4.4vw;
 }
 
-#aboutUs img {
+.aboutUsBack {
+    background-image: url(./aboutus/aboutus.svg);
     max-width: 40vw;
     height: auto;
+    background-repeat : no-repeat;
+    background-size : cover;
 }
+
+.member {
+    display: flex;
+    justify-content: ;
+    max-width: 39vw;
+    height: auto;
+}
+
 
 .roadMapCont {
     max-width: 45.8vw;
