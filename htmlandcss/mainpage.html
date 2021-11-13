@@ -13,7 +13,7 @@
     
     <header id="header">
         <div id="headerL">
-            <img src="./icons8-메뉴-30.png" id=myPageBtn class="Btn">
+            <img src="../genesisFunction/images/console.svg" id=myPageBtn class="Btn">
             <!-- soundtrack -->
             <!-- <iframe src="./music/zero.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
             <audio controls autoplay style="width: 100px; height: 15px;" >
@@ -60,7 +60,7 @@
             </section>
         </div>
         <div id="headerMid">
-            <span class="yellow">genesYs</span><span class="orange">{<img src="../genesisFunction/images/landing/impulse.svg" alt="">}</span>; > <img src="../genesisFunction/images/landing/folder.svg" alt=""> ./pre_0rder.html
+            <span class="yellow">genesYs</span><span class="orange">{<img src="../genesisFunction/images/landing/impulse.svg" alt="">}</span>; > <img src="../genesisFunction/images/landing/folder.svg" alt=""><span id="navtext">./pre_0rder.html</span>
         </div>
         <div id="headerR">
             <div>
@@ -68,12 +68,12 @@
             </div>        
         </div>
     </header>
-    <ul id=quickMenu>
-        <li><a href="#landing">landinG<span class="yellow">()</span>;</a></li>
-        <li><a href="#aboutUs">about_Us</a></li>
-        <li><a href="#roadMap">road_Map</a></li>
-        <li><a href="#whitePaper">white_Paper</a></li>            
-        <li><a href="#qna">QnA</a></li>
+    <ul id="quickMenu">
+        <li onclick="navigation();" value="./landinG.html" class="navigation"><a href="#landing">landinG<span class="yellow">()</span>;</a></li>
+        <li onclick="navigation();" value="./about_Us.html" class="navigation"><a href="#aboutUs">about_Us</a></li>
+        <li onclick="navigation();" value="./road_Map.html" class="navigation"><a href="#roadMap">road_Map</a></li>
+        <li onclick="navigation();" value="./white_Paper" class="navigation"><a href="#whitePaper">white_Paper</a></li>            
+        <li onclick="navigation();" value="./QnA" class="navigation"><a href="#qna">QnA</a></li>
     </ul>
 
     <nav>
@@ -213,6 +213,13 @@
         }
         //Landing page 이미지 음악 시작
 
+        // header navigation text.
+
+        function navigation() {
+            document.getElementsByClassName("navigation")[i] = 
+            console.log(i);
+            document.getElementById("navtext").value = navText;
+        }
     </script>
 </body>
 </html>
