@@ -202,9 +202,14 @@
         //     console.log('currentScrollValue is ' + currentScrollValue);
         // });
         
-        // var element = document.getElementById("roadMap");
-        // element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+        let scroll
+        document.addEventListener("scroll", scrollFunc)
+        scrollFunc = function(event) {
+            var element = document.getElementById("roadMap");
+            element.scrollIntoView({behavior: "auto", block: "start", inline: "start"});
 
+        }
+        
         //디데이 타이머 시작
         var dday = new Date("November 16, 2021, 00:00:00").getTime();
 
@@ -254,6 +259,8 @@
         $("#jquery5").click(function() {
             $("#menuName").text("qna")
         })
+
+
 
     </script>
 </body>
