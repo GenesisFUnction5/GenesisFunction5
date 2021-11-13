@@ -299,6 +299,10 @@ div.about p {
     background-size: cover;
     border-left: 2px solid black;
     color : black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .aboutMenuSelected {
