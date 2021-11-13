@@ -186,20 +186,22 @@ section#myPageBox {
     background-image: url(./myPAGE/pattern.svg);
     background-size: cover;
     height: 25px;
-    padding: 0px 0px 0px 15px;
     display: flex;
     justify-content: space-between;
     color: white;
     border: solid 2px black;
 }
 
-#myPageBox1 div {
-    padding: 5px;
+.myPageBox1_menu {
+    display: flex;
+    align-items: center;
 }
 
 #myPageBox1 .userName{
     background-color: black;
     padding-left: 28px; padding-right: 28px;
+    display: flex;
+    align-items: center;
 }
 
 #myPageBox2 {
@@ -226,7 +228,7 @@ section#myPageBox {
 .aboutMe {
     height: 200px; width: 300px;
     background-color: white;
-    border: 1.5px solid black;
+    border: 2px solid black;
     text-align: left;
 }
 
@@ -236,8 +238,14 @@ section#myPageBox {
     border-bottom: 2.7px solid black;
 }
 
+.aboutMenu{
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 4px;
+}
+
 div.about p {
-    border-top: 1px solid black; border-bottom: 1px solid black;
     margin: 3px 0;
     padding: 3px 0px 2px 15px;
     /* overflow: hidden; 아이콘이 안보여서 test로 넣음*/
