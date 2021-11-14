@@ -16,7 +16,7 @@
     
     <header id="header">
         <div id="headerL">
-            <img src="/css/home/icons8-메뉴-30.png" id=myPageBtn>
+            <img src="/images/console.svg" id=myPageBtn class="Btn" style="width: 3vw;">
             <!-- soundtrack -->
             <!-- <iframe src="./music/zero.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
             <audio controls autoplay style="width: 100px; height: 15px;" >
@@ -26,38 +26,55 @@
 
             <section id="myPageBox">
                 <div id="myPageBox1">
-                    <div>menu</div>
+                    <div class="myPageBox1_menu">
+                        <img src="/images/myPAGE copy/Union.svg" style="background-color: white; width: 22px; padding: 1px; border-right: 2px solid black; margin-right: 4px;"> menu
+                    </div>
                     <div class="userName">"Steve Jobs"</div>
                     <div>
-                        <img src="/myPAGE/Windows.svg" id="closeBtn">
+                        <img src="/images/myPAGE copy/Windows.svg" style="width: 24px;" id="closeBtn" class="Btn">
                     </div>
                 </div>
                 <div id="myPageBox2">
-                    <div>#id:</div><div>.class=(ceo);</div><div>signal low --</div>
+                    <div>#id: <p class="accountEmail"></p></div><div>.class=(ceo);</div><div>signal low --</div>
                 </div>
                 <div id="myPageBox3">
                     <div class="aboutMe">
                         <div class="aboutTP">about this person;</div>
                         <div class="about">
-                            <div class="test" style="display: flex;">
-                                <img src="/myPAGE/icons/alarm-clock.svg">
+                            <div class="aboutMenu">
+                                <img src="/images/myPAGE copy/icons/alarm-clock.svg" style="width: 28px;" alt="">
                                 <p>nextAirDrop();</p>
                             </div>
-                            <p>nextAirDrop();</p>
-                            <p>myAsset();</p>
-                            <p>myQ&A();</p>
-                            <p>staking</p>
-                            <p>#walletAdress</p>
+                            <div class="aboutMenu">
+                                <img src="/images/myPAGE copy/icons/keycaps.svg" style="width: 28px;" alt="">
+                                <p>myAsset();</p>
+                            </div>
+                            <div class="aboutMenu">
+                                <img src="/images/myPAGE copy/icons/notepad.svg" style="width: 28px;" alt="">
+                                <p>myQNA();</p>
+                            </div>
+                            <div class="aboutMenu">
+                                <img src="/images/myPAGE copy/icons/puzzles.svg" style="width: 28px;" alt="">
+                                <p>staking();</p>
+                            </div>
+                            <div class="aboutMenu">
+                                <img src="/images/myPAGE copy/icons/scrap-book.svg" style="width: 28px;" alt="">
+                                <p>#walletAdress();</p>
+                            </div>
                         </div>
                     </div>
                     <div class="myImageOut">
-                        <div class="myImageIn">123</div>
+                        <div class="myImageIn">
+                            <img width="100%" src="/images/myPAGE copy/p4.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div id="myPageBox4">
                     <div id="myPageBox4InBox">
-                        <div class="aboutMeContentT">"#walletAdress".app (Active)</div>
-                        <div class="aboutMeContent">2021.11.</div>
+                        <div class="aboutMeContentT">
+                            <p class="aboutMenuSelected">"#walletAdress".app (Active)</p>
+                        </div>
+                        <div class="aboutMeContent">#234Ab0d452gEDasdgF0</div>
                     </div>
                 </div>
             </section>
@@ -72,33 +89,57 @@
         </div>
     </header>
     <ul id=quickMenu>
-        <li><a href="#landing"><span id="jquery1">landinG</span><span class="yellow">()</span>;</a></li>
-        <li><a href="#aboutUs"><span id="jquery2">about_Us</span></a></li>
-        <li><a href="#roadMap"><span id="jquery3">road_Map</span></a></li>
-        <li><a href="#whitePaper"><span id="jquery4">white_Paper</span></a></li>            
-        <li><a href="#qna"><span id="jquery5">QnA</span></a></li>
+        <li><a href="#landing"><span class="quick" id="jquery1" onclick="pageFunc(this)">landinG( );</span></a></li>
+        <li><a href="#aboutUs"><span class="quick" id="jquery2" onclick="pageFunc(this)">about_Us</span></a></li>
+        <li><a href="#roadMap"><span class="quick" id="jquery3" onclick="pageFunc(this)">road_Map</span></a></li>
+        <li><a href="#whitePaper"><span class="quick" id="jquery4" onclick="pageFunc(this)">white_Paper</span></a></li>            
+        <li><a href="#qna"><span class="quick" id="jquery5" onclick="pageFunc(this)">QnA</span></a></li>
     </ul>
-
     <nav>
             <div id="landing">
                 <div id=dDayTimer><span class="orange">{ </span><span id="timer"></span><span class="orange"> }</span>;</div>
                 <div class="landingUndTimTT"><span class="yellow">first ever nft airdop of genesisFunction</span></div>
                 <div id="landImg">
                     <audio id="audio" src="/music/zero.mp3"></audio>
-                    <img value="PLAY" id="qbox" src="/images/landing/qbox-cutout.png" onclick="gfighter();" ></div>
-                <div id="landSign"><a href="/register"><span class="yellow">signIn</span><span class="orange">{<img src="/images/landing/smiley.svg">}</span>;</label></a></div>
+                    <img value="PLAY" id="qbox" src="/images/landing/qbox-cutout.png" onclick="gfighter();" class="Btn"></div>
+                <div id="landSign"><a href="/register"><span class="yellow">signIn</span><span class="orange">{<img src="/images/signin.svg">}</span>;</label></a></div>
             </div>
             <div id="aboutUs">
-                <div class="aboutUsPageHead">aboutUs<span class="yellow">()</span>;</div>
-                <img src="/images/aboutus/aboutus.svg">
+                <div class="aboutUsPageHead">aboutUs<span class="yellow">( )</span>;</div>
+                <div class="aboutUsBack">
+                    <div class="member">
+                        <div><img class="mem1" src="/images/aboutus/jk.png"></div>
+                        <div><img class="mem2"src="/images/aboutus/di.png"></div>
+                        <div><img class="mem3"src="/images/aboutus/sj.png"></div>
+                        <div><img class="mem4"src="/images/aboutus/mw.png"></div>
+                        <div><img class="mem5"src="/images/aboutus/hj.png"></div>
+                    </div>
+                    <div class="memberName">
+                        <div>JINKYNG</div><div>DOIL</div><div>SUNGJIN</div>
+                        <div>MINWOOK</div><div>HYEJIN</div>
+                    </div>
+                </div>
             </div>          
             <div id="roadMap">
-                <div class="future">futuRe<span class="yellow">()</span>;</div>
-                <div>< ></div>
-                <div>타임라인</div>
+                <div class="future">FUTURE<span class="yellow">( )</span>;</div>
+                <div class="roadMapCont">
+                    <div class="roadMapContOpen">< ></div>
+                    <div>
+                        <div class="timestamp">
+                            <div>12/31</div><div>01/01</div><div>01/02</div><div>01/03</div><div>01/04</div><div>01/05</div><div>01/06</div><div>01/07</div><div>01/08</div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeText1">NFT</div>
+                            <div class="timeText2">MAINNET</div>
+                            <div class="timeText3">DEFI</div>
+                            <div class="timeText4">TO THE MOON</div>
+                        </div>
+                    </div>
+                    <div class="roadMapContClos">< / ></div>
+                </div>
             </div>
             <div id="whitePaper">
-                <div class="whitePaperHead">whitePaper<span class="yellow">()</span>;</div>
+                <div class="whitePaperHead">whitePaper<span class="yellow">( )</span>;</div>
                 <div class="whiteBox">
                     <div class="whitePBoxNum"> 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 </div>
                     <div class="whitePBoxCont">
@@ -119,43 +160,67 @@
                 </div>
             </div>
             <div id="qna">
-                <div class="qnaHead">QNA<span class="yellow">()</span>;</div>
+                <div class="qnaHead">QNA<span class="yellow">( )</span>;</div>
                 <div class="qnaBox">
                     <div class="qBHead">
-                        <div>TOP</div><div>초기화면</div><div>http://www.genesysfunction.com</div>
+                        <div>항목</div><div>게시물</div><div>http://www.genesysfunction.com</div>
                     </div>
                     <div class="qBContent">
                         <div class="qBC1">>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> </div>
                         <div class="qBC2">
                             <div class="hot">
                                 <div>>HOT</div>
-                                <div class="hotCont">HOT</div>
+                                <div class="hotCont">
+                                    NFT를 좋아하는 사람들의 모임!<br>
+                                    NFT에 대한 정보들과 컨퍼런스 정보가 가득! NFT 동호회!<br>
+                                    https://www.genesysfunction.com/
+                                    <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Document</title>
+                                    </head>
+                                    <body>
+                                        
+                                    </body>
+                                    </html>
+                                </div>
                                 <!--게시글이 하나 생길 때 다른 div 내려가는 것 해결해야함.-->
                             </div>
                             <div class="board">
                                 <div>>게시판</div>
-                                <div class="boardCont">게시판</div>
+                                <div class="boardCont">
+                                    <ul>
+                                        <li>스테이킹 입출금 제한기간이 어떻게 되나요?</li>
+                                        <li>달나라 가즈ㅏ</li>
+                                        <li>그래서 내건 상장 언제하냐고</li>
+                                        <li>풀매수 후기</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="service">[ 기본서비스 ] <input type="button" value="1.글쓰기"> <input type="button" value="2.편집"> <input type="button" value="3.지우기"> </div>
                         </div>
                         <div class="qBC3">
-                            /\_____/\<br>/  o   o  \<br>( ==  ^  == )<br>)         (<br>(           )<br>( (  )   (  ) )<br>(__(__)___(__)__)
+                            /\_____/\<br>/  o   o  \<br>( ==  ^  == )<br>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<br>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>( (  )   (  ) )<br>(__(__)___(__)__)
                         </div>
                     </div>
                 </div>
             </div>    
     </nav>
     <footer><div id="footer">WHINDOWS POWERSHELL<br>COPIRIGHT (C) GENESYS FUNCTION ALL RIGHTS RESERVED</div></footer>
+    
+    
     <script>
-        let myPageOnOff;
+        //마이페이지 온오프 시작
+        let myPageOnOff; 
         myPageBtn = document.getElementById("myPageBtn")
         document.getElementById("myPageBox").style.display = "none";
-        
         myPageOnOff = function(e) {
             myPageDisplay = document.getElementById("myPageBox").style.display;
 
             if(myPageDisplay == "none") { //myPage 체크박스가 안되있으면 (꺼져있으면) 클릭할 때
-                if(e.target == myPageBtn) { // target id가 myPageBtn이면
+                if(e.target == myPageBtn) { // target이 myPageBtn이면
                     document.getElementById("myPageBox").style.display = "block";
                     document.getElementById("quickMenu").style.display = "none";
                     return;
@@ -182,19 +247,32 @@
                 }
             }
         }
-
         document.addEventListener("click", myPageOnOff);
-
-        // document.addEventListener("scroll", function() {
-        //     var currentScrollValue = document.documentElement.scrollTop;
-        //     console.log('currentScrollValue is ' + currentScrollValue);
-        // });
+        //마이페이지 온오프 끝
         
-        // var element = document.getElementById("roadMap");
-        // element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+
+        // 페이지이동 시작
+        // 스크롤 고정
+        window.addEventListener("wheel", function(e){
+            e.preventDefault();
+        },{passive : false});
+        
+        window.onload = function() {
+            document.getElementById("jquery1").style.color = "rgb(255,122,0)"
+        }
+
+        pageFunc = function(e) {
+            document.getElementById("jquery1").style.color = "white"
+            document.getElementById("jquery2").style.color = "white"
+            document.getElementById("jquery3").style.color = "white"
+            document.getElementById("jquery4").style.color = "white"
+            document.getElementById("jquery5").style.color = "white"
+            e.style.color = "rgb(255,122,0)"
+        }
+        // 페이지이동 끝
+
 
         //디데이 타이머 시작
-        //웹페이지에 로딩될 때 나오는 시간이 너무 느림. 해결해야함.
         var dday = new Date("November 16, 2021, 00:00:00").getTime();
 
         setInterval (function() {
@@ -205,18 +283,23 @@
             var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-            if(sec == 60) {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + (min+1) + " : 00" ;
-            }
-            else if(sec<10) {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : 0" +sec ;
+            document.getElementById("timer").innerHTML = day*24 + (hour-1) + " : "
+            if (min<=10) {
+                document.getElementById("timer").innerHTML += "0" + (min-1);
             }
             else {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : " +sec ;
+                document.getElementById("timer").innerHTML += (min-1);
             }
-
+            if (sec<=10) {
+                document.getElementById("timer").innerHTML += " : 0" + (sec-1);
+            }
+            else {
+                document.getElementById("timer").innerHTML += " : " + (sec-1);
+            }
+            
         }, 100);
         //디데이 타이머 끝
+
 
        //Landing page 이미지 음악 시작
         function gfighter() {
@@ -224,26 +307,29 @@
             var audio = document.getElementById("audio");
             audio.play();
         }
-        //Landing page 이미지 음악 시작
+        //Landing page 이미지 음악 끝
 
         //header 문자 변경 -> 메뉴 별로 //
 
-         $("#jquery1").click(function() {
-            $("#menuName").text("landinG()")
+        
+        $("#jquery1").click(function() {
+            $("#menuName").text("landinG.html")
         })
         $("#jquery2").click(function() {
-            $("#menuName").text("about_us")
+            $("#menuName").text("about_Us.html")
         })
         $("#jquery3").click(function() {
-            $("#menuName").text("road_map")
+            $("#menuName").text("road_Map.html")
         })
         $("#jquery4").click(function() {
-            $("#menuName").text("white_paper")
+            $("#menuName").text("white_Paper.html")
         })
         $("#jquery5").click(function() {
-            $("#menuName").text("qna")
+            $("#menuName").text("QnA.html")
         })
-        
+
+
+
     </script>
 </body>
 </html>
