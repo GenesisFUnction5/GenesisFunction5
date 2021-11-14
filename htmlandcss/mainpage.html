@@ -89,11 +89,11 @@
         </div>
     </header>
     <ul id=quickMenu>
-        <li><a href="#landing"><span id="jquery1">landinG</span><span class="yellow">()</span>;</a></li>
-        <li><a href="#aboutUs"><span id="jquery2">about_Us</span></a></li>
-        <li><a href="#roadMap"><span id="jquery3">road_Map</span></a></li>
-        <li><a href="#whitePaper"><span id="jquery4">white_Paper</span></a></li>            
-        <li><a href="#qna"><span id="jquery5">QnA</span></a></li>
+        <li><a href="#landing"><span class="quick" id="jquery1" onclick="pageFunc(this)">landinG( );</span></a></li>
+        <li><a href="#aboutUs"><span class="quick" id="jquery2" onclick="pageFunc(this)">about_Us</span></a></li>
+        <li><a href="#roadMap"><span class="quick" id="jquery3" onclick="pageFunc(this)">road_Map</span></a></li>
+        <li><a href="#whitePaper"><span class="quick" id="jquery4" onclick="pageFunc(this)">white_Paper</span></a></li>            
+        <li><a href="#qna"><span class="quick" id="jquery5" onclick="pageFunc(this)">QnA</span></a></li>
     </ul>
     <nav>
             <div id="landing">
@@ -105,7 +105,7 @@
                 <div id="landSign"><a href="../login/join.html"><span class="yellow">signIn</span><span class="orange">{<img src="../genesisFunction/images/signin.svg">}</span>;</label></a></div>
             </div>
             <div id="aboutUs">
-                <div class="aboutUsPageHead">aboutUs<span class="yellow">()</span>;</div>
+                <div class="aboutUsPageHead">aboutUs<span class="yellow">( )</span>;</div>
                 <div class="aboutUsBack">
                     <div class="member">
                         <div><img class="mem1" src="./aboutus/jk.png"></div>
@@ -121,7 +121,7 @@
                 </div>
             </div>          
             <div id="roadMap">
-                <div class="future">FUTURE<span class="yellow">()</span>;</div>
+                <div class="future">FUTURE<span class="yellow">( )</span>;</div>
                 <div class="roadMapCont">
                     <div class="roadMapContOpen">< ></div>
                     <div>
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div id="whitePaper">
-                <div class="whitePaperHead">whitePaper<span class="yellow">()</span>;</div>
+                <div class="whitePaperHead">whitePaper<span class="yellow">( )</span>;</div>
                 <div class="whiteBox">
                     <div class="whitePBoxNum"> 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 </div>
                     <div class="whitePBoxCont">
@@ -160,7 +160,7 @@
                 </div>
             </div>
             <div id="qna">
-                <div class="qnaHead">QNA<span class="yellow">()</span>;</div>
+                <div class="qnaHead">QNA<span class="yellow">( )</span>;</div>
                 <div class="qnaBox">
                     <div class="qBHead">
                         <div>항목</div><div>게시물</div><div>http://www.genesysfunction.com</div>
@@ -220,7 +220,7 @@
             myPageDisplay = document.getElementById("myPageBox").style.display;
 
             if(myPageDisplay == "none") { //myPage 체크박스가 안되있으면 (꺼져있으면) 클릭할 때
-                if(e.target == myPageBtn) { // target id가 myPageBtn이면
+                if(e.target == myPageBtn) { // target이 myPageBtn이면
                     document.getElementById("myPageBox").style.display = "block";
                     document.getElementById("quickMenu").style.display = "none";
                     return;
@@ -252,14 +252,23 @@
         
 
         // 페이지이동 시작
-        // let pageFunc;
-        // pageFunc = function() {
-        //     var element = document.getElementById("roadMap");
-        //     element.scrollIntoView({behavior: "auto", block: "start", inline: "start"});
+        // 스크롤 고정
+        window.addEventListener("wheel", function(e){
+            e.preventDefault();
+        },{passive : false});
+        
+        window.onload = function() {
+            document.getElementById("jquery1").style.color = "rgb(255,122,0)"
+        }
 
-        // }
-        // document.addEventListener("scroll", scrollFunc)
-
+        pageFunc = function(e) {
+            document.getElementById("jquery1").style.color = "white"
+            document.getElementById("jquery2").style.color = "white"
+            document.getElementById("jquery3").style.color = "white"
+            document.getElementById("jquery4").style.color = "white"
+            document.getElementById("jquery5").style.color = "white"
+            e.style.color = "rgb(255,122,0)"
+        }
         // 페이지이동 끝
 
 
@@ -274,16 +283,20 @@
             var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
             var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-            if(sec == 60) {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + (min+1) + " : 00" ;
-            }
-            else if(sec<10) {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : 0" +sec ;
+            document.getElementById("timer").innerHTML = day*24 + (hour-1) + " : "
+            if (min<=10) {
+                document.getElementById("timer").innerHTML += "0" + (min-1);
             }
             else {
-                document.getElementById("timer").innerHTML = day*24 + hour + " : " + min + " : " +sec ;
+                document.getElementById("timer").innerHTML += (min-1);
             }
-
+            if (sec<=10) {
+                document.getElementById("timer").innerHTML += " : 0" + (sec-1);
+            }
+            else {
+                document.getElementById("timer").innerHTML += " : " + (sec-1);
+            }
+            
         }, 100);
         //디데이 타이머 끝
 

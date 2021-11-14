@@ -149,6 +149,8 @@ body {
     background-color: rgb(55, 147, 255);
     color: white;
     text-align: center;
+    /* 스크롤 없애는거 */
+    /* overflow: hidden; */
 }
 
 #header {
