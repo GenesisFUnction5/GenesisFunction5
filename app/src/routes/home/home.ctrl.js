@@ -3,6 +3,10 @@
 const User = require("../../models/User");
 
 const output = {
+  
+  loading: (req, res) => {
+    res.render("home/loading");
+  },
   home: (req, res) => {
     res.render("home/index");
   },
@@ -15,6 +19,12 @@ const output = {
 };
 
 const process = {
+
+  home: async (req, res) => {
+    const user = new User(req.body);
+    const response = await user.home();
+    return res.json(response);
+  },
   login: async (req, res) => {
     const user = new User(req.body);
     const response = await user.login();
